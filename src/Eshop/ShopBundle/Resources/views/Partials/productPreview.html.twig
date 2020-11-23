@@ -1,54 +1,59 @@
 {% trans_default_domain 'ShopBundle' %}
-<div class="owl-item" style="width: 285px;"><div class="item item-carousel">
-                      <div class="products">
-                        <div class="product">
-                          <div class="product-image">
-                            <div class="image"> 
-                              <a href="{{ path('show_product', {'slug' : product.slug}) }}">
-                                {% if product.images|length %}
-                                  <img class="group list-group-image"
-                                      src="{{ asset( ('uploads/gallery/' ~ product.images.first().path) | imagine_filter('category_mainpage_thumb')) }}"
-                                      alt="{{ product.name }}"/>
-                                {% else %}
-                                  <img class="group list-group-image"
-                                      src="{{ asset( ('uploads/gallery/no_image_available.png') | imagine_filter('category_mainpage_thumb')) }}"
-                                      alt="{{ product.name }}"/>
-                                {% endif %}
-                              </a> 
-                            </div>
-                            <!-- /.image -->
-                            
-                      
-                          </div>
-                          <!-- /.product-image -->
-                          
-                          <div class="product-info text-left">
-                       
-                            <h3 class="name"><a href="{{ path('show_product', {'slug' : product.slug}) }}"> {{ product.name }}</a></h3>
-                             
-                            <div class="description"></div>
-                            <div class="product-price"> <span class="price">  {{ product.price }} {{ 'currency'|trans }}</span> <span class="price-before-discount">{{ product.Dprice }} {{ 'currency'|trans }}</span> </div>
-                            <!-- /.product-price --> 
-                            
-                          </div>
-                          <!-- /.product-info -->
-                          <div class="cart clearfix animate-effect">
-                            <div class="action">
-                              <ul class="list-unstyled">
-                                <li class="add-cart-button btn-group">
-                                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i
-                                  class="fa fa-shopping-cart"></i> </button>
-                                </li>
-                                <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title="" data-original-title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title="" data-original-title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                              </ul>
-                            </div>
-                            <!-- /.action --> 
-                          </div>
-                          <!-- /.cart --> 
-                        </div>
-                        <!-- /.product --> 
-                        
-                      </div>
-                      <!-- /.products --> 
-                    </div></div>
+<div class="owl-item" style="width: 240px;">
+  <div class="item item-carousel">
+    <div class="products">
+      <div class="product">
+        <div class="product-image">
+          <div class="image">
+            <a href="{{ path('show_product', {'slug' : product.slug}) }}">
+              {% if product.images|length %}
+              <img class="group list-group-image"
+                src="{{ asset( ('uploads/gallery/' ~ product.images.first().path) | imagine_filter('category_mainpage_thumb')) }}"
+                alt="{{ product.name }}" />
+              {% else %}
+              <img class="group list-group-image"
+                src="{{ asset( ('uploads/gallery/no_image_available.png') | imagine_filter('category_mainpage_thumb')) }}"
+                alt="{{ product.name }}" />
+              {% endif %}
+            </a>
+          </div>
+          <!-- /.image -->
+
+
+        </div>
+        <!-- /.product-image -->
+
+        <div class="product-info text-left">
+
+          <h3 class="name"><a href="{{ path('show_product', {'slug' : product.slug}) }}"> {{ product.name }}</a></h3>
+
+          <div class="description"></div>
+          <div class="product-price"> <span class="price"> {{ product.price }} {{ 'currency'|trans }}</span> <span
+              class="price-before-discount">{{ product.Dprice }} {{ 'currency'|trans }}</span> </div>
+          <!-- /.product-price -->
+
+        </div>
+        <!-- /.product-info -->
+        <div class="cart clearfix animate-effect">
+          <div class="action">
+            <ul class="list-unstyled">
+              <li class="add-cart-button btn-group">
+                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i
+                    class="fa fa-shopping-cart"></i> </button>
+              </li>
+              <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title=""
+                  data-original-title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+              <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title=""
+                  data-original-title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+            </ul>
+          </div>
+          <!-- /.action -->
+        </div>
+        <!-- /.cart -->
+      </div>
+      <!-- /.product -->
+
+    </div>
+    <!-- /.products -->
+  </div>
+</div>

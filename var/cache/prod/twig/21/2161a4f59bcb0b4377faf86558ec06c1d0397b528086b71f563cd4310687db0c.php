@@ -139,15 +139,15 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 \t\t\t\t\t     <div class=\"col-xs-12 col-sm-5 col-md-4 gallery-holder\">
     <div class=\"product-item-holder size-big single-product-gallery small-gallery\">
 
-     
-           
-              ";
-        // line 29
-        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 29, $this->source); })()), "images", [], "any", false, false, false, 29))) {
-            // line 30
-            echo "                 <div id=\"owl-single-product\" class=\"owl-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+     <div id=\"owl-single-product\" class=\"owl-carousel owl-theme\" style=\"opacity: 1; display: block;\">
             <div class=\"owl-wrapper-outer\"><div class=\"owl-wrapper\" style=\"width: 6372px; left: 0px; display: block;\">
             <div class=\"owl-item\" style=\"width: 354px;\"><div class=\"single-product-gallery-item\" id=\"slide1\">
+           
+              ";
+        // line 31
+        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 31, $this->source); })()), "images", [], "any", false, false, false, 31))) {
+            // line 32
+            echo "                 
                 <a data-lightbox=\"image-1\" data-title=\"Gallery\" href=\"";
             // line 33
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/gallery/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 33, $this->source); })()), "images", [], "any", false, false, false, 33), "first", [], "method", false, false, false, 33), "path", [], "any", false, false, false, 33))), "html", null, true);
@@ -160,28 +160,27 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
             echo "\">
                 </a>
                  
-            </div>
-            </div>
+            
                   
                 ";
         } else {
-            // line 41
+            // line 40
             echo "                    
-                          <div class=\"owl-item\" style=\"width: 354px;\"><div class=\"single-product-gallery-item\" id=\"slide2\">
+                          
                 <a data-lightbox=\"image-1\" data-title=\"Gallery\" href=\"";
-            // line 43
+            // line 42
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Liip\ImagineBundle\Templating\ImagineExtension']->filter("uploads/gallery/no_image_available.png", "product_main_thumb")), "html", null, true);
             echo "\">
                     <img class=\"img-responsive\" alt=\"\" src=\"";
-            // line 44
+            // line 43
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Liip\ImagineBundle\Templating\ImagineExtension']->filter("uploads/gallery/no_image_available.png", "product_main_thumb")), "html", null, true);
             echo "\">
                 </a>
-            </div></div>
                 ";
         }
-        // line 48
-        echo "            
+        // line 46
+        echo "            </div>
+            </div>
             
             </div></div><!-- /.single-product-gallery-item -->
 
@@ -210,26 +209,26 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
                 <div class=\"owl-wrapper-outer\">
                 <div class=\"owl-wrapper\" style=\" \">
                      ";
-        // line 76
-        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 76, $this->source); })()), "images", [], "any", false, false, false, 76))) {
-            // line 77
+        // line 75
+        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 75, $this->source); })()), "images", [], "any", false, false, false, 75))) {
+            // line 76
             echo "                            ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 77, $this->source); })()), "images", [], "any", false, false, false, 77), 1));
+            $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 76, $this->source); })()), "images", [], "any", false, false, false, 76), 1));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 78
+                // line 77
                 echo "                        
                                  <div class=\"owl-item\" style=\"width: 89px;\">
                         <div class=\"item\">
                                 <a class=\"horizontal-thumb active\" data-target=\"#owl-single-product\" data-slide=\"1\" href=\"";
-                // line 81
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/gallery/" . twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 81))), "html", null, true);
+                // line 80
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/gallery/" . twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 80))), "html", null, true);
                 echo "\">
                                     <img class=\"img-responsive\" alt=\"";
-                // line 82
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 82, $this->source); })()), "name", [], "any", false, false, false, 82), "html", null, true);
+                // line 81
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 81, $this->source); })()), "name", [], "any", false, false, false, 81), "html", null, true);
                 echo "\" src=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Liip\ImagineBundle\Templating\ImagineExtension']->filter(("uploads/gallery/" . twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 82)), "product_preview_thumb")), "html", null, true);
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Liip\ImagineBundle\Templating\ImagineExtension']->filter(("uploads/gallery/" . twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, false, 81)), "product_preview_thumb")), "html", null, true);
                 echo "\">
                                     </a>
                         </div>
@@ -239,10 +238,10 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 87
+            // line 86
             echo "                        ";
         }
-        // line 88
+        // line 87
         echo "                    
                </div></div>
             <div class=\"owl-controls clickable\"><div class=\"owl-pagination\"><div class=\"owl-page\"><span class=\"\"></span></div><div class=\"owl-page\"><span class=\"\"></span></div><div class=\"owl-page active\"><span class=\"\"></span></div></div></div></div><!-- /#owl-single-product-thumbnails -->
@@ -256,8 +255,8 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 \t\t\t\t\t<div class=\"col-sm-7 col-md-5 product-info-block\">
 \t\t\t\t\t\t<div class=\"product-info\">
 \t\t\t\t\t\t\t<h1 class=\"name\">";
-        // line 100
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 100, $this->source); })()), "name", [], "any", false, false, false, 100), "html", null, true);
+        // line 99
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 99, $this->source); })()), "name", [], "any", false, false, false, 99), "html", null, true);
         echo "</h1>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t\t<div class=\"rating-reviews m-t-20\">
@@ -286,17 +285,17 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 \t\t\t\t\t\t\t\t\t<div class=\"pull-left\">
 \t\t\t\t\t\t\t\t\t\t<div class=\"stock-box\">
                                           ";
-        // line 127
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 127, $this->source); })()), "quantity", [], "any", false, false, false, 127) > 0)) {
-            // line 128
+        // line 126
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 126, $this->source); })()), "quantity", [], "any", false, false, false, 126) > 0)) {
+            // line 127
             echo "\t\t\t\t\t\t\t\t\t\t\t<span class=\"value\">In Stock</span>
                                             ";
         } else {
-            // line 130
+            // line 129
             echo "                                            <span class=\"value\">Not Availble</span>
                                             ";
         }
-        // line 132
+        // line 131
         echo "\t\t\t\t\t\t\t\t\t\t</div>\t
 \t\t\t\t\t\t\t\t\t</div>
                                     </div>
@@ -314,16 +313,16 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
                                         <span class=\"price\" style=\"color: #ffc100;  font-size: 22px;  font-weight: 500;     line-height: 50px;\"
                                         
                                         >";
-        // line 148
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 148, $this->source); })()), "price", [], "any", false, false, false, 148), "html", null, true);
+        // line 147
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 147, $this->source); })()), "price", [], "any", false, false, false, 147), "html", null, true);
         echo "</span> ";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("currency", [], "ShopBundle"), "html", null, true);
         echo "
 \t\t\t\t\t\t\t\t\t\t 
 \t\t\t\t\t\t\t\t\t\t\t<span style=\"    color: #aaa;    font-size: 22px;     font-weight: 300;     line-height: 50px;     text-decoration: line-through;     vertical-align: top;     margin-left: 10px;\" 
                                             class=\"price-strike\">";
-        // line 151
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 151, $this->source); })()), "Dprice", [], "any", false, false, false, 151), "html", null, true);
+        // line 150
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 150, $this->source); })()), "Dprice", [], "any", false, false, false, 150), "html", null, true);
         echo "</span> ";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("currency", [], "ShopBundle"), "html", null, true);
         echo "
@@ -373,8 +372,8 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 \t\t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t\t\t 
 \t\t\t\t\t\t\t\t\t <div class=\"row addtocart id-row\" data-id=\"";
-        // line 197
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 197, $this->source); })()), "id", [], "any", false, false, false, 197), "html", null, true);
+        // line 196
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 196, $this->source); })()), "id", [], "any", false, false, false, 196), "html", null, true);
         echo "\">
                                         <div class=\"col-md-2\">
                                      <span class=\"label\">Qty :</span>       <input type=\"number\" class=\"form-control addtocart-input\" value=\"1\">
@@ -384,7 +383,7 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
                                                 <a style=\"    padding: 10px 30px;  font-size: 18px;    background-color: #ffc100;    color: #fff;     font-weight: 500;\"
                                                 class=\"btn btn-success addtocart-btn\" href=\"#\">
                                              <i class=\"fa fa-shopping-cart inner-right-vs\"></i>   ";
-        // line 205
+        // line 204
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("cart.addtocart", [], "ShopBundle"), "html", null, true);
         echo "</a>
                                             </p>
@@ -449,8 +448,8 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 \t\t\t\t\t\t\t\t<div id=\"description\" class=\"tab-pane in active\">
 \t\t\t\t\t\t\t\t\t<div class=\"product-tab\">
 \t\t\t\t\t\t\t\t\t\t<p class=\"text\">      ";
-        // line 267
-        echo nl2br($this->extensions['Eshop\ShopBundle\Twig\RawDescriptionExtension']->rawdescrFilter(twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 267, $this->source); })()), "description", [], "any", false, false, false, 267)));
+        // line 266
+        echo nl2br($this->extensions['Eshop\ShopBundle\Twig\RawDescriptionExtension']->rawdescrFilter(twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 266, $this->source); })()), "description", [], "any", false, false, false, 266)));
         echo " </p>
 \t\t\t\t\t\t\t\t\t</div>\t
 \t\t\t\t\t\t\t\t</div><!-- /.tab-pane -->
@@ -610,23 +609,23 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 
     }
 
-    // line 422
+    // line 421
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 423
+        // line 422
         echo "    ";
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
     <script src=\"";
-        // line 424
+        // line 423
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/fancybox/jquery.mousewheel-3.0.6.pack.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
     <script src=\"";
-        // line 425
+        // line 424
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/fancybox/jquery.fancybox.pack.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
     <script>
@@ -634,19 +633,19 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
             \$('.fancybox').fancybox();
 
             ";
-        // line 430
+        // line 429
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 431
+            // line 430
             echo "                checkProductIsLiked(";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 431, $this->source); })()), "id", [], "any", false, false, false, 431), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 430, $this->source); })()), "id", [], "any", false, false, false, 430), "html", null, true);
             echo ");
             ";
         }
-        // line 433
+        // line 432
         echo "
             addToLastSeenProductIds(";
-        // line 434
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 434, $this->source); })()), "id", [], "any", false, false, false, 434), "html", null, true);
+        // line 433
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new RuntimeError('Variable "product" does not exist.', 433, $this->source); })()), "id", [], "any", false, false, false, 433), "html", null, true);
         echo ");
         });
     </script>
@@ -668,7 +667,7 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 
     public function getDebugInfo()
     {
-        return array (  649 => 434,  646 => 433,  640 => 431,  638 => 430,  630 => 425,  626 => 424,  621 => 423,  614 => 422,  453 => 267,  388 => 205,  377 => 197,  326 => 151,  318 => 148,  300 => 132,  296 => 130,  292 => 128,  290 => 127,  260 => 100,  246 => 88,  243 => 87,  230 => 82,  226 => 81,  221 => 78,  216 => 77,  214 => 76,  184 => 48,  177 => 44,  173 => 43,  169 => 41,  157 => 34,  153 => 33,  148 => 30,  146 => 29,  133 => 18,  126 => 17,  116 => 13,  111 => 12,  104 => 11,  91 => 9,  78 => 8,  64 => 5,  57 => 4,  40 => 1,);
+        return array (  648 => 433,  645 => 432,  639 => 430,  637 => 429,  629 => 424,  625 => 423,  620 => 422,  613 => 421,  452 => 266,  387 => 204,  376 => 196,  325 => 150,  317 => 147,  299 => 131,  295 => 129,  291 => 127,  289 => 126,  259 => 99,  245 => 87,  242 => 86,  229 => 81,  225 => 80,  220 => 77,  215 => 76,  213 => 75,  182 => 46,  176 => 43,  172 => 42,  168 => 40,  157 => 34,  153 => 33,  150 => 32,  148 => 31,  133 => 18,  126 => 17,  116 => 13,  111 => 12,  104 => 11,  91 => 9,  78 => 8,  64 => 5,  57 => 4,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -699,28 +698,27 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
 \t\t\t\t\t     <div class=\"col-xs-12 col-sm-5 col-md-4 gallery-holder\">
     <div class=\"product-item-holder size-big single-product-gallery small-gallery\">
 
-     
-           
-              {% if product.images | length %}
-                 <div id=\"owl-single-product\" class=\"owl-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+     <div id=\"owl-single-product\" class=\"owl-carousel owl-theme\" style=\"opacity: 1; display: block;\">
             <div class=\"owl-wrapper-outer\"><div class=\"owl-wrapper\" style=\"width: 6372px; left: 0px; display: block;\">
             <div class=\"owl-item\" style=\"width: 354px;\"><div class=\"single-product-gallery-item\" id=\"slide1\">
+           
+              {% if product.images | length %}
+                 
                 <a data-lightbox=\"image-1\" data-title=\"Gallery\" href=\"{{ asset(('uploads/gallery/' ~ product.images.first().path)) }}\">
                     <img class=\"img-responsive\" alt=\"{{ product.name }}\" src=\"{{ asset( ('uploads/gallery/' ~ product.images.first().path) | imagine_filter('product_main_thumb')) }}\">
                 </a>
                  
-            </div>
-            </div>
+            
                   
                 {% else %}
                     
-                          <div class=\"owl-item\" style=\"width: 354px;\"><div class=\"single-product-gallery-item\" id=\"slide2\">
+                          
                 <a data-lightbox=\"image-1\" data-title=\"Gallery\" href=\"{{ asset( ('uploads/gallery/no_image_available.png') | imagine_filter('product_main_thumb')) }}\">
                     <img class=\"img-responsive\" alt=\"\" src=\"{{ asset( ('uploads/gallery/no_image_available.png') | imagine_filter('product_main_thumb')) }}\">
                 </a>
-            </div></div>
                 {% endif %}
-            
+            </div>
+            </div>
             
             </div></div><!-- /.single-product-gallery-item -->
 
@@ -1110,6 +1108,6 @@ class __TwigTemplate_37aa1dcb0871bed78033dd440a1cce03c8b67e26b928507744d0668ae63
         });
     </script>
 {% endblock javascripts %}
-", "ShopBundle:Catalog:showProduct.html.twig", "C:\\laragon\\www\\qassiima\\src\\Eshop\\ShopBundle/Resources/views/Catalog/showProduct.html.twig");
+", "ShopBundle:Catalog:showProduct.html.twig", "C:\\laragon\\www\\qassima\\src\\Eshop\\ShopBundle/Resources/views/Catalog/showProduct.html.twig");
     }
 }

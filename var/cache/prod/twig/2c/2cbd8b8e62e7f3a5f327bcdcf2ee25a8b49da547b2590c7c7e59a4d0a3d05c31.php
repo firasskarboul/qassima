@@ -103,292 +103,64 @@ class __TwigTemplate_09ef61dfc811f21233a9b5eb8e7f698149b0d0cf65e83e9d770b6fe8dcc
         // line 12
         echo "</div>
 <div class=\"container\">
-  <div class=\"col-md-3 sidebar\">
-    <div class=\"sidebar-module-container\">
-      <div class=\"sidebar-filter\">
-        <!-- ============================================== SIDEBAR CATEGORY ============================================== -->
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <h3 class=\"section-title\">Shop by</h3>
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Category</h4>
-          </div>
-          <div class=\"sidebar-widget-body\">
-            <div class=\"accordion\">
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseOne\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Camera </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseOne\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseTwo\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Desktops </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseTwo\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseThree\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Pants </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseThree\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseFour\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Bags </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseFour\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseFive\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Hats </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseFive\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseSix\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Accessories </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseSix\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-            </div>
-            <!-- /.accordion -->
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== SIDEBAR CATEGORY : END ============================================== -->
-
-        <!-- ============================================== PRICE SILDER============================================== -->
-
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Price Slider</h4>
-          </div>
-          <div class=\"sidebar-widget-body m-t-10\">
-            <div class=\"price-range-holder\"> <span class=\"min-max\"> <span class=\"pull-left\">\$200.00</span> <span
-                  class=\"pull-right\">\$800.00</span> </span>
-              <input type=\"text\" id=\"amount\" style=\"border:0; color:#666666; font-weight:bold;text-align:center;\">
-              <div class=\"slider slider-horizontal\" id=\"\">
-                <div class=\"slider-track\">
-                  <div class=\"slider-selection\" style=\"left: 16.6667%; width: 50%;\"></div>
-                  <div class=\"slider-handle min-slider-handle\" tabindex=\"0\" style=\"left: 16.6667%;\"></div>
-                  <div class=\"slider-handle max-slider-handle\" tabindex=\"0\" style=\"left: 66.6667%;\"></div>
-                </div>
-                <div class=\"tooltip tooltip-main top\" style=\"left: 41.6667%; margin-left: -34.5px;\">
-                  <div class=\"tooltip-arrow\"></div>
-                  <div class=\"tooltip-inner\">200 : 500</div>
-                </div>
-                <div class=\"tooltip tooltip-min top\" style=\"left: 16.6667%; margin-left: -34.5px;\">
-                  <div class=\"tooltip-arrow\"></div>
-                  <div class=\"tooltip-inner\">200</div>
-                </div>
-                <div class=\"tooltip tooltip-max bottom\" style=\"top: 18px; left: 66.6667%; margin-left: -35px;\">
-                  <div class=\"tooltip-arrow\"></div>
-                  <div class=\"tooltip-inner\">500</div>
-                </div>
-              </div><input type=\"text\" class=\"price-slider\" value=\"200,500\" data=\"value: '200,500'\"
-                style=\"display: none;\">
-            </div>
-            <!-- /.price-range-holder -->
-            <a href=\"#\" class=\"lnk btn btn-primary\">Show Now</a>
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== PRICE SILDER : END ============================================== -->
-        <!-- ============================================== MANUFACTURES============================================== -->
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Manufactures</h4>
-          </div>
-          <div class=\"sidebar-widget-body\">
-            <ul class=\"list\">
-              <li><a href=\"#\">Forever 18</a></li>
-              <li><a href=\"#\">Nike</a></li>
-              <li><a href=\"#\">Dolce &amp; Gabbana</a></li>
-              <li><a href=\"#\">Alluare</a></li>
-              <li><a href=\"#\">Chanel</a></li>
-              <li><a href=\"#\">Other Brand</a></li>
-            </ul>
-            <!--<a href=\"#\" class=\"lnk btn btn-primary\">Show Now</a>-->
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== MANUFACTURES: END ============================================== -->
-        <!-- ============================================== COLOR============================================== -->
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Colors</h4>
-          </div>
-          <div class=\"sidebar-widget-body\">
-            <ul class=\"list\">
-              <li><a href=\"#\">Red</a></li>
-              <li><a href=\"#\">Blue</a></li>
-              <li><a href=\"#\">Yellow</a></li>
-              <li><a href=\"#\">Pink</a></li>
-              <li><a href=\"#\">Brown</a></li>
-              <li><a href=\"#\">Teal</a></li>
-            </ul>
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-
-        <!-- ============================================== COMPARE: END ============================================== -->
-        <!-- ============================================== PRODUCT TAGS ============================================== -->
-
-        <!-- /.sidebar-widget -->
-        <!----------- Testimonials------------->
-
-
-        <!-- ============================================== Testimonials: END ============================================== -->
-
-
-      </div>
-      <!-- /.sidebar-filter -->
-    </div>
-  </div>
-
-  <div class=\"col-md-9 rht-col\">
+  
+  <div class=\"col-md-9 rht-col\" style=\"margin-left:130px;\">
     <div class=\"clearfix filters-container m-t-10\">
 
       <div class=\"well well-sm\">
         <div class=\"btn-group\">
           <a href=\"#\" id=\"list\" class=\"btn btn-default btn-sm\"><span class=\"glyphicon glyphicon-th-list\">
             </span>";
-        // line 249
+        // line 21
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.view.list", [], "ShopBundle"), "html", null, true);
         echo "</a> <a href=\"#\" id=\"grid\" class=\"btn btn-default btn-sm\"><span
               class=\"glyphicon glyphicon-th\"></span>";
-        // line 250
+        // line 22
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.view.grid", [], "ShopBundle"), "html", null, true);
         echo "</a>
         </div>
         <strong>";
-        // line 252
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 252, $this->source); })()), "name", [], "any", false, false, false, 252), "html", null, true);
+        // line 24
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["category"]) || array_key_exists("category", $context) ? $context["category"] : (function () { throw new RuntimeError('Variable "category" does not exist.', 24, $this->source); })()), "name", [], "any", false, false, false, 24), "html", null, true);
         echo "</strong>
         <div class=\"dropdown pull-right\">
           <strong>";
-        // line 254
+        // line 26
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.sort.by", [], "ShopBundle"), "html", null, true);
         echo "</strong>
           <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\"
             aria-haspopup=\"true\" aria-expanded=\"true\">
             ";
-        // line 257
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans((isset($context["sortedby"]) || array_key_exists("sortedby", $context) ? $context["sortedby"] : (function () { throw new RuntimeError('Variable "sortedby" does not exist.', 257, $this->source); })()), [], "ShopBundle"), "html", null, true);
+        // line 29
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans((isset($context["sortedby"]) || array_key_exists("sortedby", $context) ? $context["sortedby"] : (function () { throw new RuntimeError('Variable "sortedby" does not exist.', 29, $this->source); })()), [], "ShopBundle"), "html", null, true);
         echo "
             <span class=\"caret\"></span>
           </button>
           <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">
             <li>";
-        // line 261
-        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->sortable($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 261, $this->source); })()), $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.sort.name", [], "ShopBundle"), "p.name");
+        // line 33
+        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->sortable($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 33, $this->source); })()), $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.sort.name", [], "ShopBundle"), "p.name");
         echo "</li>
             <li>";
-        // line 262
-        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->sortable($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 262, $this->source); })()), $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.sort.price", [], "ShopBundle"), "p.price");
+        // line 34
+        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->sortable($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 34, $this->source); })()), $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("category.sort.price", [], "ShopBundle"), "p.price");
         echo "</li>
           </ul>
         </div>
       </div>
-
+      <div class=\"container\"></div>
       <div class=\"search-result-container\">
         <div id=\"myTabContent\" class=\"tab-content category-list\">
           <div class=\"tab-pane active\">
             <div class=\"category-product\">
               <div class=\"row\">
                 ";
-        // line 272
-        if (twig_length_filter($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 272, $this->source); })()))) {
-            // line 273
+        // line 44
+        if (twig_length_filter($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 44, $this->source); })()))) {
+            // line 45
             echo "                  ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 273, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 45, $this->source); })()));
             $context['loop'] = [
               'parent' => $context['_parent'],
               'index0' => 0,
@@ -403,10 +175,10 @@ class __TwigTemplate_09ef61dfc811f21233a9b5eb8e7f698149b0d0cf65e83e9d770b6fe8dcc
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 274
+                // line 46
                 echo "                    <div class=\"col-sm-6 col-md-4 col-lg-4 wow fadeInUp animated\">
                       ";
-                // line 275
+                // line 47
                 echo twig_include($this->env, $context, "@Shop/Partials/productPreview.html.twig");
                 echo "
                     </div>
@@ -423,31 +195,31 @@ class __TwigTemplate_09ef61dfc811f21233a9b5eb8e7f698149b0d0cf65e83e9d770b6fe8dcc
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 278
+            // line 50
             echo "                ";
         } else {
-            // line 279
+            // line 51
             echo "                <h3>";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("manufacturer.noproducts", [], "ShopBundle"), "html", null, true);
             echo "</h3>
                 ";
         }
-        // line 281
+        // line 53
         echo "              </div>
               <div class=\"row\">
                 <div class=\"col-md-8 col-md-offset-4\">
                   ";
-        // line 284
-        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->render($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 284, $this->source); })()));
+        // line 56
+        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->render($this->env, (isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 56, $this->source); })()));
         echo "
                 </div>
               </div>
               <div class=\"row well well-lg\">
                 ";
-        // line 289
+        // line 61
         echo "                <div class=\"caption\">
                   ";
-        // line 293
+        // line 65
         echo "                </div>
 
 
@@ -480,7 +252,7 @@ class __TwigTemplate_09ef61dfc811f21233a9b5eb8e7f698149b0d0cf65e83e9d770b6fe8dcc
 
     public function getDebugInfo()
     {
-        return array (  451 => 293,  448 => 289,  441 => 284,  436 => 281,  430 => 279,  427 => 278,  410 => 275,  407 => 274,  389 => 273,  387 => 272,  374 => 262,  370 => 261,  363 => 257,  357 => 254,  352 => 252,  347 => 250,  343 => 249,  104 => 12,  97 => 11,  84 => 9,  71 => 8,  62 => 5,  55 => 4,  38 => 1,);
+        return array (  223 => 65,  220 => 61,  213 => 56,  208 => 53,  202 => 51,  199 => 50,  182 => 47,  179 => 46,  161 => 45,  159 => 44,  146 => 34,  142 => 33,  135 => 29,  129 => 26,  124 => 24,  119 => 22,  115 => 21,  104 => 12,  97 => 11,  84 => 9,  71 => 8,  62 => 5,  55 => 4,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -498,236 +270,8 @@ class __TwigTemplate_09ef61dfc811f21233a9b5eb8e7f698149b0d0cf65e83e9d770b6fe8dcc
 {% block page_content -%}
 </div>
 <div class=\"container\">
-  <div class=\"col-md-3 sidebar\">
-    <div class=\"sidebar-module-container\">
-      <div class=\"sidebar-filter\">
-        <!-- ============================================== SIDEBAR CATEGORY ============================================== -->
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <h3 class=\"section-title\">Shop by</h3>
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Category</h4>
-          </div>
-          <div class=\"sidebar-widget-body\">
-            <div class=\"accordion\">
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseOne\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Camera </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseOne\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseTwo\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Desktops </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseTwo\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseThree\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Pants </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseThree\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseFour\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Bags </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseFour\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseFive\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Hats </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseFive\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-              <div class=\"accordion-group\">
-                <div class=\"accordion-heading\"> <a href=\"#collapseSix\" data-toggle=\"collapse\"
-                    class=\"accordion-toggle collapsed\"> Accessories </a> </div>
-                <!-- /.accordion-heading -->
-                <div class=\"accordion-body collapse\" id=\"collapseSix\" style=\"height: 0px;\">
-                  <div class=\"accordion-inner\">
-                    <ul>
-                      <li><a href=\"#\">gaming</a></li>
-                      <li><a href=\"#\">office</a></li>
-                      <li><a href=\"#\">kids</a></li>
-                      <li><a href=\"#\">for women</a></li>
-                    </ul>
-                  </div>
-                  <!-- /.accordion-inner -->
-                </div>
-                <!-- /.accordion-body -->
-              </div>
-              <!-- /.accordion-group -->
-
-            </div>
-            <!-- /.accordion -->
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== SIDEBAR CATEGORY : END ============================================== -->
-
-        <!-- ============================================== PRICE SILDER============================================== -->
-
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Price Slider</h4>
-          </div>
-          <div class=\"sidebar-widget-body m-t-10\">
-            <div class=\"price-range-holder\"> <span class=\"min-max\"> <span class=\"pull-left\">\$200.00</span> <span
-                  class=\"pull-right\">\$800.00</span> </span>
-              <input type=\"text\" id=\"amount\" style=\"border:0; color:#666666; font-weight:bold;text-align:center;\">
-              <div class=\"slider slider-horizontal\" id=\"\">
-                <div class=\"slider-track\">
-                  <div class=\"slider-selection\" style=\"left: 16.6667%; width: 50%;\"></div>
-                  <div class=\"slider-handle min-slider-handle\" tabindex=\"0\" style=\"left: 16.6667%;\"></div>
-                  <div class=\"slider-handle max-slider-handle\" tabindex=\"0\" style=\"left: 66.6667%;\"></div>
-                </div>
-                <div class=\"tooltip tooltip-main top\" style=\"left: 41.6667%; margin-left: -34.5px;\">
-                  <div class=\"tooltip-arrow\"></div>
-                  <div class=\"tooltip-inner\">200 : 500</div>
-                </div>
-                <div class=\"tooltip tooltip-min top\" style=\"left: 16.6667%; margin-left: -34.5px;\">
-                  <div class=\"tooltip-arrow\"></div>
-                  <div class=\"tooltip-inner\">200</div>
-                </div>
-                <div class=\"tooltip tooltip-max bottom\" style=\"top: 18px; left: 66.6667%; margin-left: -35px;\">
-                  <div class=\"tooltip-arrow\"></div>
-                  <div class=\"tooltip-inner\">500</div>
-                </div>
-              </div><input type=\"text\" class=\"price-slider\" value=\"200,500\" data=\"value: '200,500'\"
-                style=\"display: none;\">
-            </div>
-            <!-- /.price-range-holder -->
-            <a href=\"#\" class=\"lnk btn btn-primary\">Show Now</a>
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== PRICE SILDER : END ============================================== -->
-        <!-- ============================================== MANUFACTURES============================================== -->
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Manufactures</h4>
-          </div>
-          <div class=\"sidebar-widget-body\">
-            <ul class=\"list\">
-              <li><a href=\"#\">Forever 18</a></li>
-              <li><a href=\"#\">Nike</a></li>
-              <li><a href=\"#\">Dolce &amp; Gabbana</a></li>
-              <li><a href=\"#\">Alluare</a></li>
-              <li><a href=\"#\">Chanel</a></li>
-              <li><a href=\"#\">Other Brand</a></li>
-            </ul>
-            <!--<a href=\"#\" class=\"lnk btn btn-primary\">Show Now</a>-->
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== MANUFACTURES: END ============================================== -->
-        <!-- ============================================== COLOR============================================== -->
-        <div class=\"sidebar-widget wow fadeInUp animated animated\"
-          style=\"visibility: visible; animation-name: fadeInUp;\">
-          <div class=\"widget-header\">
-            <h4 class=\"widget-title\">Colors</h4>
-          </div>
-          <div class=\"sidebar-widget-body\">
-            <ul class=\"list\">
-              <li><a href=\"#\">Red</a></li>
-              <li><a href=\"#\">Blue</a></li>
-              <li><a href=\"#\">Yellow</a></li>
-              <li><a href=\"#\">Pink</a></li>
-              <li><a href=\"#\">Brown</a></li>
-              <li><a href=\"#\">Teal</a></li>
-            </ul>
-          </div>
-          <!-- /.sidebar-widget-body -->
-        </div>
-        <!-- /.sidebar-widget -->
-
-        <!-- ============================================== COMPARE: END ============================================== -->
-        <!-- ============================================== PRODUCT TAGS ============================================== -->
-
-        <!-- /.sidebar-widget -->
-        <!----------- Testimonials------------->
-
-
-        <!-- ============================================== Testimonials: END ============================================== -->
-
-
-      </div>
-      <!-- /.sidebar-filter -->
-    </div>
-  </div>
-
-  <div class=\"col-md-9 rht-col\">
+  
+  <div class=\"col-md-9 rht-col\" style=\"margin-left:130px;\">
     <div class=\"clearfix filters-container m-t-10\">
 
       <div class=\"well well-sm\">
@@ -750,7 +294,7 @@ class __TwigTemplate_09ef61dfc811f21233a9b5eb8e7f698149b0d0cf65e83e9d770b6fe8dcc
           </ul>
         </div>
       </div>
-
+      <div class=\"container\"></div>
       <div class=\"search-result-container\">
         <div id=\"myTabContent\" class=\"tab-content category-list\">
           <div class=\"tab-pane active\">

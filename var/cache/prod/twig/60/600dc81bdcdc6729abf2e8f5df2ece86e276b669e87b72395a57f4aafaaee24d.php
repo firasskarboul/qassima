@@ -37,7 +37,7 @@ class __TwigTemplate_46322c01a8c2978f1521a6142b926838578af4d8b5c9bf327549f8f3409
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@Shop/Partials/productPreview.html.twig"));
 
         // line 2
-        echo "<div class=\"owl-item\" style=\"width: 285px;\"><div class=\"item item-carousel\">
+        echo "<div class=\"owl-item\" style=\"width: 240px;\"><div class=\"item item-carousel\">
                       <div class=\"products\">
                         <div class=\"product\">
                           <div class=\"product-image\">
@@ -150,7 +150,7 @@ class __TwigTemplate_46322c01a8c2978f1521a6142b926838578af4d8b5c9bf327549f8f3409
     public function getSourceContext()
     {
         return new Source("{% trans_default_domain 'ShopBundle' %}
-<div class=\"owl-item\" style=\"width: 285px;\"><div class=\"item item-carousel\">
+<div class=\"owl-item\" style=\"width: 240px;\"><div class=\"item item-carousel\">
                       <div class=\"products\">
                         <div class=\"product\">
                           <div class=\"product-image\">
@@ -203,6 +203,6 @@ class __TwigTemplate_46322c01a8c2978f1521a6142b926838578af4d8b5c9bf327549f8f3409
                       </div>
                       <!-- /.products --> 
                     </div></div>
-", "@Shop/Partials/productPreview.html.twig", "C:\\laragon\\www\\qassiima\\src\\Eshop\\ShopBundle\\Resources\\views\\Partials\\productPreview.html.twig");
+", "@Shop/Partials/productPreview.html.twig", "C:\\laragon\\www\\qassima\\src\\Eshop\\ShopBundle\\Resources\\views\\Partials\\productPreview.html.twig");
     }
 }
