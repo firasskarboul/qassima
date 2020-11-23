@@ -40,11 +40,17 @@ class __TwigTemplate_fd8adfc93564ab7fba8c025505ca8c65c806defc9e5a6825ab12d217c20
         echo "<h3 class=\"text-center\">";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("layout.lastseen.header", [], "ShopBundle"), "html", null, true);
         echo "</h3>
-<div class=\"col-md-12\">
-    ";
-        // line 4
+ <div class=\"tab-content outer-top-xs\">
+          <div class=\"tab-pane in active\" id=\"all\">
+            <div class=\"product-slider\">
+              <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+                <div class=\"owl-wrapper-outer\">
+                  <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
+
+                    ";
+        // line 10
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 4, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 10, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -59,11 +65,11 @@ class __TwigTemplate_fd8adfc93564ab7fba8c025505ca8c65c806defc9e5a6825ab12d217c20
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 5
-            echo "        ";
+            // line 11
+            echo "                        ";
             echo twig_include($this->env, $context, "@Shop/Partials/productPreview.html.twig");
             echo "
-    ";
+                    ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
             $context['loop']['first'] = false;
@@ -76,9 +82,13 @@ class __TwigTemplate_fd8adfc93564ab7fba8c025505ca8c65c806defc9e5a6825ab12d217c20
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 7
-        echo "</div>
-";
+        // line 13
+        echo "                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -96,18 +106,28 @@ class __TwigTemplate_fd8adfc93564ab7fba8c025505ca8c65c806defc9e5a6825ab12d217c20
 
     public function getDebugInfo()
     {
-        return array (  80 => 7,  63 => 5,  46 => 4,  40 => 2,);
+        return array (  86 => 13,  69 => 11,  52 => 10,  40 => 2,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% trans_default_domain 'ShopBundle' %}
 <h3 class=\"text-center\">{{ 'layout.lastseen.header'|trans }}</h3>
-<div class=\"col-md-12\">
-    {% for product in products %}
-        {{ include('@Shop/Partials/productPreview.html.twig') }}
-    {% endfor %}
-</div>
-", "@Shop/Partials/lastSeenProducts.html.twig", "D:\\laragon\\www\\Qasima\\src\\Eshop\\ShopBundle\\Resources\\views\\Partials\\lastSeenProducts.html.twig");
+ <div class=\"tab-content outer-top-xs\">
+          <div class=\"tab-pane in active\" id=\"all\">
+            <div class=\"product-slider\">
+              <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+                <div class=\"owl-wrapper-outer\">
+                  <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
+
+                    {% for product in products %}
+                        {{ include('@Shop/Partials/productPreview.html.twig') }}
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>", "@Shop/Partials/lastSeenProducts.html.twig", "D:\\laragon\\www\\qassima\\src\\Eshop\\ShopBundle\\Resources\\views\\Partials\\lastSeenProducts.html.twig");
     }
 }

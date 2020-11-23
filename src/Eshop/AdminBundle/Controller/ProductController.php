@@ -129,10 +129,10 @@ class ProductController extends Controller
     
     
     ];
-     return new JsonResponse($data);
-     /*   return ['entity' => $product,
+    //  return new JsonResponse($data);
+        return ['entity' => $product,
                 'delete_form' => $deleteForm->createView()
-        ];*/
+        ]; 
     }
 
     /**

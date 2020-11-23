@@ -32,8 +32,11 @@ class CatalogController extends Controller
         $productRepository = $em->getRepository('ShopBundle:Product');
 
         $c = $em->getRepository( 'ShopBundle:Category' );
+        // $cat =  $c->createQueryBuilder( 'p' )
+        // ->select( 'p' )->setMaxResults(3) ->setFirstResult(0) ->getQuery()
+        // ->getResult();
         $cat =  $c->createQueryBuilder( 'p' )
-        ->select( 'p' )->setMaxResults(3) ->setFirstResult(0) ->getQuery()
+        ->select( 'p' )->setMaxResults(9) ->setFirstResult(0)->addOrderBy('p.id', 'DESC') ->getQuery()
         ->getResult();
             
         

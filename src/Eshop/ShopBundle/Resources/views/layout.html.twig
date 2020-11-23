@@ -40,15 +40,15 @@
               {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
                         <li><a href="{{ path('favourites') }}" class="icon fa fa-heart">{{ 'Wishlist'|trans }}</a></li>
                     {% endif %}
-                     <li>
+                     {# <li>
                         <a href="{{ path('showcart') }}">
                             <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                             {{ render(controller('ShopBundle:Cart:navbarCart')) }}
                         </a>
-                    </li>
+                    </li> #}
                
               
-              <li><a href="sign-in.html"><i class="icon fa fa-lock"></i>Become a Vendor</a></li>
+              <li><a href="#"><i class="icon fa fa-lock"></i>Become a Vendor</a></li>
             </ul>
           </div>
           <!-- /.cnt-account -->
@@ -119,32 +119,58 @@
                 <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
                   <div class="nav-outer">
                     <ul class="nav navbar-nav">
-                      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Deals</a>
-                        <ul class="dropdown-menu pages">
-                          <li>
-                            <div class="yamm-content">
-                              <div class="row">
-                                <div class="col-xs-12 col-menu">
-                                  <ul class="links">
-                                    <li><a href="deals-grid.html">Grid/List View</a></li>
-                                    <li><a href="deals-detail.html">Deal Detail</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+
+                        <li class="dropdown">
+
+                             <a href="{{ path('index_main') }}" >Home</a>
+                        
 
                       </li>
-                             <li class="dropdown"> 
-                             <a href="{{path('Contact_new')}}" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Contact</a>
+
+                      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">All Deals</a>
+                       
+
+                      </li>
+                             <li class="dropdown">
+
+                             <a href="{{path('Contact_new')}}" >Contact</a>
                         
 
                       </li>
                        
+
+
+
+{# 
+                         {% include '@Shop/Partials/navbarAuthBlock.html.twig' %} #}
+
+
+
+
                        {# {{ render(controller('ShopBundle:LayoutsUtility:staticPagesMenu')) }} #}
+     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+     <li></li>
+                       <div class="top-cart-row">
+         
+
+              <div class="dropdown dropdown-cart"> 
+              <a href="{{ path('showcart') }}" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+                  
+                      {{ render(controller('ShopBundle:Cart:navbarCart')) }}
+
+
+                </a>
+                   {# <a href="{{ path('showcart') }}">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                            {{ render(controller('ShopBundle:Cart:navbarCart')) }}
+                        </a> #}
+              </div>
+    
+            </div>
                       
                         </ul>
+
+
                       </li>
 
                     </ul>

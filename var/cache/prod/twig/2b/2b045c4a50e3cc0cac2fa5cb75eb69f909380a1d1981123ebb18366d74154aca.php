@@ -56,10 +56,8 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        // line 5
-        echo "    ";
         // line 6
-        echo "    QASIMA
+        echo "QASSIMA
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -74,238 +72,243 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 10
-        echo "<div class=\"row\">
-   <div class=\"col-md-12\">
+        echo "</div>
+<div class=\"container\">
+  <div class=\"row\" style=\"margin:30px;\">
+    <div class=\"col-md-12\" >
       <div class=\"cnt-strip\">
         <div class=\"image1\">
-                  
 
- 
-
-            ";
-        // line 18
+          ";
+        // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["Ads"]) || array_key_exists("Ads", $context) ? $context["Ads"] : (function () { throw new RuntimeError('Variable "Ads" does not exist.', 18, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["Ads"]) || array_key_exists("Ads", $context) ? $context["Ads"] : (function () { throw new RuntimeError('Variable "Ads" does not exist.', 17, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["ad"]) {
+            // line 18
+            echo "          ";
             // line 19
-            echo "                     ";
-            // line 20
-            echo "              ";
-            if ((twig_get_attribute($this->env, $this->source, $context["ad"], "slideOrder", [], "any", false, false, false, 20) == "top")) {
-                // line 21
-                echo "                <a class=\"fancybox\" rel=\"group\" href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product", ["slug" => twig_get_attribute($this->env, $this->source, $context["ad"], "slug", [], "any", false, false, false, 21)]), "html", null, true);
+            echo "          ";
+            if ((twig_get_attribute($this->env, $this->source, $context["ad"], "slideOrder", [], "any", false, false, false, 19) == "top")) {
+                // line 20
+                echo "          <a class=\"fancybox\" rel=\"group\" href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product", ["slug" => twig_get_attribute($this->env, $this->source, $context["ad"], "slug", [], "any", false, false, false, 20)]), "html", null, true);
                 echo "\">
-                   <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"";
-                // line 22
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["ad"], "path", [], "any", false, false, false, 22))), "html", null, true);
-                echo "\" alt=\"\">
-              </a>
-              ";
+            <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"";
+                // line 21
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["ad"], "path", [], "any", false, false, false, 21))), "html", null, true);
+                echo "\"
+              alt=\"\">
+          </a>
+          ";
             }
             // line 25
-            echo "            ";
+            echo "          ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ad'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 26
         echo "        </div>
-                   
-                  <!-- /.new-label -->
+
+        <!-- /.new-label -->
       </div>
-                <!-- /.wide-banner -->
+      <!-- /.wide-banner -->
     </div>
-              <!-- /.col -->
- 
-</div>
-            <!-- /.row -->
-<div class=\"outer-top-ts top-banner\">
+    <!-- /.col -->
+
+  </div>
+  <!-- /.row -->
+  <div class=\"outer-top-ts top-banner\">
     <div class=\"container\">
       <img class=\"img-responsive\" src=\"";
         // line 38
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/banners/top-banner.png"), "html", null, true);
         echo "\" alt=\"\"></div>
   </div>
-    ";
+  ";
         // line 40
         if (twig_length_filter($this->env, (isset($context["slides"]) || array_key_exists("slides", $context) ? $context["slides"] : (function () { throw new RuntimeError('Variable "slides" does not exist.', 40, $this->source); })()))) {
             // line 41
-            echo "        ";
+            echo "  ";
             echo twig_include($this->env, $context, "@Shop/Partials/slidesBlock.html.twig");
             echo "
-    ";
+  ";
         }
         // line 43
-        echo "    <div class=\"row\">
-<div class=\"col-xs-12 col-sm-12 col-md-12\">
-          <!-- ========================================== SECTION – HERO ========================================= -->
+        echo "  <div class=\"row\" style=\"margin:30px;\">
+    <div class=\"col-xs-12 col-sm-12 col-md-12\">
+      <!-- ========================================== SECTION – HERO ========================================= -->
 
 
 
-          <!-- ========================================= SECTION – HERO : END ========================================= -->
+      <!-- ========================================= SECTION – HERO : END ========================================= -->
 
 
-          <!-- ============================================== STORES SECTION ============================================== -->
-       <section class=\"section featured-section wow fadeInUp animated\" style=\"visibility: visible;\">
-            <h2>Stores For You</h2>
-            <div class=\"featured-product\">
-              <div class=\"owl-carousel homepage-owl-carousel custom-carousel owl-theme outer-top-xs\" style=\"opacity: 1; display: block;\">
-                <div class=\"owl-wrapper-outer\">
-                <div class=\"owl-wrapper\" style=\"width: 2838px; left: 0px; display: block;\">
-                 
+      <!-- ============================================== STORES SECTION ============================================== -->
+      <section class=\"section featured-section wow fadeInUp animated\" style=\"visibility: visible;\">
+        <h2>Categories for you</h2>
+        <div class=\"featured-product\">
+          <div class=\"owl-carousel homepage-owl-carousel custom-carousel owl-theme outer-top-xs\"
+            style=\"opacity: 1; display: block;\">
+            <div class=\"owl-wrapper-outer\">
+              <div class=\"owl-wrapper\" style=\"width: 2838px; left: 0px; display: block;\">
 
- 
 
- 
+
+
+
                 ";
-        // line 64
+        // line 65
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["catss"]) || array_key_exists("catss", $context) ? $context["catss"] : (function () { throw new RuntimeError('Variable "catss" does not exist.', 64, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["catss"]) || array_key_exists("catss", $context) ? $context["catss"] : (function () { throw new RuntimeError('Variable "catss" does not exist.', 65, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["entity"]) {
-            // line 65
-            echo "                 <div class=\"owl-item\" style=\"width: 129px;\">
-                 <div class=\"item item-carousel\">
-                  <div class=\"products\">
-                    <div class=\"product\">
-                      <div class=\"product-image\">
-                        <div class=\"image\">
-                          <a href=\"#\">
-                           ";
-            // line 72
-            if (twig_get_attribute($this->env, $this->source, $context["entity"], "path", [], "any", false, false, false, 72)) {
-                // line 73
-                echo "                        <a class=\"fancybox\" rel=\"group\" href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("category", ["slug" => twig_get_attribute($this->env, $this->source, $context["entity"], "slug", [], "any", false, false, false, 73)]), "html", null, true);
-                echo "\">
-                            <img src=\"";
+            // line 66
+            echo "                <div class=\"owl-item\" style=\"width: 129px;\">
+                  <div class=\"item item-carousel\">
+                    <div class=\"products\">
+                      <div class=\"product\">
+                        <div class=\"product-image\">
+                          <div class=\"image\">
+                            <a href=\"#\">
+                              ";
+            // line 73
+            if (twig_get_attribute($this->env, $this->source, $context["entity"], "path", [], "any", false, false, false, 73)) {
                 // line 74
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Liip\ImagineBundle\Templating\ImagineExtension']->filter(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["entity"], "path", [], "any", false, false, false, 74)), "some_thumb")), "html", null, true);
-                echo "\"/>
-                        </a>
-                    ";
+                echo "                              <a class=\"fancybox\" rel=\"group\" href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("category", ["slug" => twig_get_attribute($this->env, $this->source, $context["entity"], "slug", [], "any", false, false, false, 74)]), "html", null, true);
+                echo "\">
+                                <img
+                                  src=\"";
+                // line 76
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($this->extensions['Liip\ImagineBundle\Templating\ImagineExtension']->filter(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["entity"], "path", [], "any", false, false, false, 76)), "some_thumb")), "html", null, true);
+                echo "\" />
+                              </a>
+                              ";
             } else {
-                // line 77
-                echo "                        ";
+                // line 79
+                echo "                              ";
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("no photos", [], "ShopBundle"), "html", null, true);
                 echo "
-                    ";
+                              ";
             }
-            // line 79
-            echo "                             
-                          </a>
+            // line 81
+            echo "
+                            </a>
+                          </div>
+                          <!-- /.image -->
+
                         </div>
-                        <!-- /.image -->
+                        <div class=\"product-info\">
+                          <h3 class=\"name\"><a href=\"#\">";
+            // line 88
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["entity"], "name", [], "any", false, false, false, 88), "html", null, true);
+            echo "</a></h3>
+                        </div>
 
                       </div>
-                      <div class=\"product-info\">
-                        <h3 class=\"name\"><a href=\"#\">";
-            // line 86
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["entity"], "name", [], "any", false, false, false, 86), "html", null, true);
-            echo "</a></h3>
-                      </div>
+                      <!-- /.product -->
 
                     </div>
-                    <!-- /.product -->
-
+                    <!-- /.products -->
                   </div>
-                  <!-- /.products -->
-                   </div>
-                      </div>
-                      ";
+                </div>
+                ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entity'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 96
-        echo "   
-                </div></div>
-             
-              <div class=\"owl-controls clickable\"><div class=\"owl-buttons\"><div class=\"owl-prev\"></div><div class=\"owl-next\"></div></div></div></div>
-
-              <!-- /.home-owl-carousel -->
+        // line 99
+        echo "              </div>
             </div>
-          </section>
 
- 
-        
-           
-             
-        
-         
+            <div class=\"owl-controls clickable\">
+              <div class=\"owl-buttons\">
+                <div class=\"owl-prev\"></div>
+                <div class=\"owl-next\"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.home-owl-carousel -->
+        </div>
+      </section>
+
     </div>
-     
-            <div class=\"row\">
-              <div class=\"col-md-12\">
-                <div class=\"cnt-strip\">
-                  <div class=\"image1\"> 
-                  
-                   ";
-        // line 118
+
+    <div class=\"row\" style=\"margin:30px;\">
+      <div class=\"col-md-12\">
+        <div class=\"cnt-strip\">
+          <div class=\"image1\">
+
+            ";
+        // line 121
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["Ads"]) || array_key_exists("Ads", $context) ? $context["Ads"] : (function () { throw new RuntimeError('Variable "Ads" does not exist.', 118, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["Ads"]) || array_key_exists("Ads", $context) ? $context["Ads"] : (function () { throw new RuntimeError('Variable "Ads" does not exist.', 121, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["ad"]) {
-            // line 119
-            echo "                     ";
-            // line 120
-            echo "              ";
-            if ((twig_get_attribute($this->env, $this->source, $context["ad"], "slideOrder", [], "any", false, false, false, 120) == "MID")) {
-                // line 121
-                echo "                <a class=\"fancybox\" rel=\"group\" href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product", ["slug" => twig_get_attribute($this->env, $this->source, $context["ad"], "slug", [], "any", false, false, false, 121)]), "html", null, true);
+            // line 122
+            echo "            ";
+            // line 123
+            echo "            ";
+            if ((twig_get_attribute($this->env, $this->source, $context["ad"], "slideOrder", [], "any", false, false, false, 123) == "MID")) {
+                // line 124
+                echo "            <br>
+            <a class=\"fancybox\" rel=\"group\" href=\"";
+                // line 125
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product", ["slug" => twig_get_attribute($this->env, $this->source, $context["ad"], "slug", [], "any", false, false, false, 125)]), "html", null, true);
                 echo "\">
-                   <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"";
-                // line 122
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["ad"], "path", [], "any", false, false, false, 122))), "html", null, true);
-                echo "\" alt=\"\">
-              </a>
-              ";
+              <img style=\"width: 100%;\" class=\"img-responsive\" src=\"";
+                // line 126
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["ad"], "path", [], "any", false, false, false, 126))), "html", null, true);
+                echo "\"
+                alt=\"\">
+            </a>
+            ";
             }
-            // line 125
+            // line 130
             echo "            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ad'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 126
-        echo "                  </div>
-                 
-                  <!-- /.new-label -->
-                </div>
-                <!-- /.wide-banner -->
-              </div>
-              <!-- /.col -->
+        // line 131
+        echo "          </div>
+
+          <!-- /.new-label -->
+        </div>
+        <!-- /.wide-banner -->
+      </div>
+      <!-- /.col -->
 
 
-            </div>
-            <!-- /.row -->
-         
+    </div>
+    <!-- /.row -->
+
     <div class=\"row\">
-        <div class=\"col-md-12\">
-       
-             <div class=\"more-info-tab clearfix \">
-                <h3 class=\"new-product-title pull-left\">";
-        // line 142
+      <div class=\"col-md-12\">
+
+        <div class=\"more-info-tab clearfix \">
+          <h3 class=\"new-product-title pull-left\">";
+        // line 147
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("layout.index.latestproducts", [], "ShopBundle"), "html", null, true);
         echo "</h3>
-              <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
-                <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
-              </ul>
-              <!-- /.nav-tabs --> 
-            </div>
-            <div class=\"tab-content outer-top-xs\">
-                    <div class=\"tab-pane in active\" id=\"all\">
-                            <div class=\"product-slider\">
-                                <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
-                                    <div class=\"owl-wrapper-outer\">
-                                        <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
-                                                ";
-        // line 157
+          <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
+            <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
+          </ul>
+          <!-- /.nav-tabs -->
+        </div>
+        <div class=\"tab-content outer-top-xs\">
+          <div class=\"tab-pane in active\" id=\"all\">
+            <div class=\"product-slider\">
+              <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+                <div class=\"owl-wrapper-outer\">
+                  <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
+                    ";
+        // line 162
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["latest_products"]) || array_key_exists("latest_products", $context) ? $context["latest_products"] : (function () { throw new RuntimeError('Variable "latest_products" does not exist.', 157, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["latest_products"]) || array_key_exists("latest_products", $context) ? $context["latest_products"] : (function () { throw new RuntimeError('Variable "latest_products" does not exist.', 162, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -320,11 +323,11 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 158
-            echo "                                                    ";
+            // line 163
+            echo "                    ";
             echo twig_include($this->env, $context, "@Shop/Partials/productPreview.html.twig");
             echo "
-                                                ";
+                    ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
             $context['loop']['first'] = false;
@@ -337,85 +340,88 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 160
-        echo "                                        </div>
-                                    </div>
-                                 </div>
-                                </div>
-                            </div>
+        // line 165
+        echo "                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
+
+      </div>
     </div>
     <div class=\"row\">
-              <div class=\"col-md-12\">
-                <div class=\"cnt-strip\">
-                  <div class=\"image1\">  
-                  
-                   ";
-        // line 174
+      <div class=\"col-md-12\">
+        <div class=\"cnt-strip\">
+          <div class=\"image1\">
+
+            ";
+        // line 179
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["Ads"]) || array_key_exists("Ads", $context) ? $context["Ads"] : (function () { throw new RuntimeError('Variable "Ads" does not exist.', 174, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["Ads"]) || array_key_exists("Ads", $context) ? $context["Ads"] : (function () { throw new RuntimeError('Variable "Ads" does not exist.', 179, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["ad"]) {
-            // line 175
-            echo "                   ";
-            if ((twig_get_attribute($this->env, $this->source, $context["ad"], "slideOrder", [], "any", false, false, false, 175) == "Bottuom")) {
-                // line 176
-                echo "                <a class=\"fancybox\" rel=\"group\" href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product", ["slug" => twig_get_attribute($this->env, $this->source, $context["ad"], "slug", [], "any", false, false, false, 176)]), "html", null, true);
-                echo "\">
-                   <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"";
-                // line 177
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["ad"], "path", [], "any", false, false, false, 177))), "html", null, true);
-                echo "\" alt=\"\">
-              </a>
-              ";
-            }
             // line 180
+            echo "            ";
+            if ((twig_get_attribute($this->env, $this->source, $context["ad"], "slideOrder", [], "any", false, false, false, 180) == "Bottuom")) {
+                // line 181
+                echo "            <br>
+            <a class=\"fancybox\" rel=\"group\" href=\"";
+                // line 182
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product", ["slug" => twig_get_attribute($this->env, $this->source, $context["ad"], "slug", [], "any", false, false, false, 182)]), "html", null, true);
+                echo "\">
+              <img style=\"width: 100%;\" class=\"img-responsive\" src=\"";
+                // line 183
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("uploads/images/" . twig_get_attribute($this->env, $this->source, $context["ad"], "path", [], "any", false, false, false, 183))), "html", null, true);
+                echo "\"
+                alt=\"\">
+            </a>
+            ";
+            }
+            // line 187
             echo "            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ad'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 181
-        echo "                  
-                  </div>
-                
-                  <!-- /.new-label -->
-                </div>
-                <!-- /.wide-banner -->
-              </div>
-              <!-- /.col -->
+        // line 188
+        echo "
+          </div>
+
+          <!-- /.new-label -->
+        </div>
+        <!-- /.wide-banner -->
+      </div>
+      <!-- /.col -->
 
 
-            </div>
-            <!-- /.row -->
+    </div>
+    <!-- /.row -->
     <div class=\"row\">
-        <div class=\"col-md-12\">
-                 <div class=\"more-info-tab clearfix \">
-                <h3 class=\"new-product-title pull-left\">";
-        // line 196
+      <div class=\"col-md-12\">
+        <div class=\"more-info-tab clearfix \">
+          <h3 class=\"new-product-title pull-left\">";
+        // line 203
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("layout.index.featuredproducts", [], "ShopBundle"), "html", null, true);
         echo "</h3>
-              <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
-                <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
-              </ul>
-              <!-- /.nav-tabs --> 
-            </div>
-            <div class=\"tab-content outer-top-xs\">
-                    <div class=\"tab-pane in active\" id=\"all\">
-                            <div class=\"product-slider\">
-                                <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
-                                    <div class=\"owl-wrapper-outer\">
-                                        <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
-         
-            ";
-        // line 212
+          <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
+            <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
+          </ul>
+          <!-- /.nav-tabs -->
+        </div>
+        <div class=\"tab-content outer-top-xs\">
+          <div class=\"tab-pane in active\" id=\"all\">
+            <div class=\"product-slider\">
+              <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+                <div class=\"owl-wrapper-outer\">
+                  <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
+
+                    ";
+        // line 219
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["featured_products"]) || array_key_exists("featured_products", $context) ? $context["featured_products"] : (function () { throw new RuntimeError('Variable "featured_products" does not exist.', 212, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["featured_products"]) || array_key_exists("featured_products", $context) ? $context["featured_products"] : (function () { throw new RuntimeError('Variable "featured_products" does not exist.', 219, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -430,11 +436,11 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 213
-            echo "                ";
+            // line 220
+            echo "                    ";
             echo twig_include($this->env, $context, "@Shop/Partials/productPreview.html.twig");
             echo "
-            ";
+                    ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
             $context['loop']['first'] = false;
@@ -447,17 +453,18 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 215
-        echo "                    
-                                        </div>
-                                    </div>
-                                 </div>
-                                </div>
-                            </div>
+        // line 222
+        echo "
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+  </div>
+</div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -476,7 +483,7 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
 
     public function getDebugInfo()
     {
-        return array (  451 => 215,  434 => 213,  417 => 212,  398 => 196,  381 => 181,  375 => 180,  369 => 177,  364 => 176,  361 => 175,  357 => 174,  341 => 160,  324 => 158,  307 => 157,  289 => 142,  271 => 126,  265 => 125,  259 => 122,  254 => 121,  251 => 120,  249 => 119,  245 => 118,  221 => 96,  204 => 86,  195 => 79,  189 => 77,  183 => 74,  178 => 73,  176 => 72,  167 => 65,  163 => 64,  140 => 43,  134 => 41,  132 => 40,  127 => 38,  113 => 26,  107 => 25,  101 => 22,  96 => 21,  93 => 20,  91 => 19,  87 => 18,  77 => 10,  70 => 9,  62 => 6,  60 => 5,  53 => 4,  36 => 1,);
+        return array (  457 => 222,  440 => 220,  423 => 219,  404 => 203,  387 => 188,  381 => 187,  374 => 183,  370 => 182,  367 => 181,  364 => 180,  360 => 179,  344 => 165,  327 => 163,  310 => 162,  292 => 147,  274 => 131,  268 => 130,  261 => 126,  257 => 125,  254 => 124,  251 => 123,  249 => 122,  245 => 121,  221 => 99,  204 => 88,  195 => 81,  189 => 79,  183 => 76,  177 => 74,  175 => 73,  166 => 66,  162 => 65,  138 => 43,  132 => 41,  130 => 40,  125 => 38,  111 => 26,  105 => 25,  98 => 21,  93 => 20,  90 => 19,  88 => 18,  84 => 17,  75 => 10,  68 => 9,  60 => 6,  53 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -485,227 +492,234 @@ class __TwigTemplate_f9234e49658e98b4e661633e78ccb133c7c742a3e6d42777af403c82daf
 {% trans_default_domain 'ShopBundle' %}
 
 {% block title %}
-    {# {{ 'layout.navbar.sitename'|trans }} - {{ 'categories.menu.header'|trans }} #}
-    QASIMA
+{# {{ 'layout.navbar.sitename'|trans }} - {{ 'categories.menu.header'|trans }} #}
+QASSIMA
 {% endblock title %}
 
 {% block page_content -%}
-<div class=\"row\">
-   <div class=\"col-md-12\">
+</div>
+<div class=\"container\">
+  <div class=\"row\" style=\"margin:30px;\">
+    <div class=\"col-md-12\" >
       <div class=\"cnt-strip\">
         <div class=\"image1\">
-                  
 
- 
-
-            {% for ad in Ads %}
-                     {# {{ad.slideOrder == 'top'}} #}
-              {% if ad.slideOrder == 'top' %}
-                <a class=\"fancybox\" rel=\"group\" href=\"{{ path('show_product', {'slug' : ad.slug}) }}\">
-                   <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"{{ asset('uploads/images/' ~ ad.path)   }}\" alt=\"\">
-              </a>
-              {% endif %}
-            {% endfor %}
+          {% for ad in Ads %}
+          {# {{ad.slideOrder == 'top'}} #}
+          {% if ad.slideOrder == 'top' %}
+          <a class=\"fancybox\" rel=\"group\" href=\"{{ path('show_product', {'slug' : ad.slug}) }}\">
+            <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"{{ asset('uploads/images/' ~ ad.path)   }}\"
+              alt=\"\">
+          </a>
+          {% endif %}
+          {% endfor %}
         </div>
-                   
-                  <!-- /.new-label -->
+
+        <!-- /.new-label -->
       </div>
-                <!-- /.wide-banner -->
+      <!-- /.wide-banner -->
     </div>
-              <!-- /.col -->
- 
-</div>
-            <!-- /.row -->
-<div class=\"outer-top-ts top-banner\">
+    <!-- /.col -->
+
+  </div>
+  <!-- /.row -->
+  <div class=\"outer-top-ts top-banner\">
     <div class=\"container\">
       <img class=\"img-responsive\" src=\"{{ asset('assets/images/banners/top-banner.png') }}\" alt=\"\"></div>
   </div>
-    {% if slides|length %}
-        {{ include('@Shop/Partials/slidesBlock.html.twig') }}
-    {% endif %}
-    <div class=\"row\">
-<div class=\"col-xs-12 col-sm-12 col-md-12\">
-          <!-- ========================================== SECTION – HERO ========================================= -->
+  {% if slides|length %}
+  {{ include('@Shop/Partials/slidesBlock.html.twig') }}
+  {% endif %}
+  <div class=\"row\" style=\"margin:30px;\">
+    <div class=\"col-xs-12 col-sm-12 col-md-12\">
+      <!-- ========================================== SECTION – HERO ========================================= -->
 
 
 
-          <!-- ========================================= SECTION – HERO : END ========================================= -->
+      <!-- ========================================= SECTION – HERO : END ========================================= -->
 
 
-          <!-- ============================================== STORES SECTION ============================================== -->
-       <section class=\"section featured-section wow fadeInUp animated\" style=\"visibility: visible;\">
-            <h2>Stores For You</h2>
-            <div class=\"featured-product\">
-              <div class=\"owl-carousel homepage-owl-carousel custom-carousel owl-theme outer-top-xs\" style=\"opacity: 1; display: block;\">
-                <div class=\"owl-wrapper-outer\">
-                <div class=\"owl-wrapper\" style=\"width: 2838px; left: 0px; display: block;\">
-                 
+      <!-- ============================================== STORES SECTION ============================================== -->
+      <section class=\"section featured-section wow fadeInUp animated\" style=\"visibility: visible;\">
+        <h2>Categories for you</h2>
+        <div class=\"featured-product\">
+          <div class=\"owl-carousel homepage-owl-carousel custom-carousel owl-theme outer-top-xs\"
+            style=\"opacity: 1; display: block;\">
+            <div class=\"owl-wrapper-outer\">
+              <div class=\"owl-wrapper\" style=\"width: 2838px; left: 0px; display: block;\">
 
- 
 
- 
+
+
+
                 {% for entity in catss %}
-                 <div class=\"owl-item\" style=\"width: 129px;\">
-                 <div class=\"item item-carousel\">
-                  <div class=\"products\">
-                    <div class=\"product\">
-                      <div class=\"product-image\">
-                        <div class=\"image\">
-                          <a href=\"#\">
-                           {% if entity.path %}
-                        <a class=\"fancybox\" rel=\"group\" href=\"{{ path('category', {'slug' : entity.slug}) }}\">
-                            <img src=\"{{ asset( ('uploads/images/' ~ entity.path) | imagine_filter('some_thumb')) }}\"/>
-                        </a>
-                    {% else %}
-                        {{ 'no photos'|trans }}
-                    {% endif %}
-                             
-                          </a>
+                <div class=\"owl-item\" style=\"width: 129px;\">
+                  <div class=\"item item-carousel\">
+                    <div class=\"products\">
+                      <div class=\"product\">
+                        <div class=\"product-image\">
+                          <div class=\"image\">
+                            <a href=\"#\">
+                              {% if entity.path %}
+                              <a class=\"fancybox\" rel=\"group\" href=\"{{ path('category', {'slug' : entity.slug}) }}\">
+                                <img
+                                  src=\"{{ asset( ('uploads/images/' ~ entity.path) | imagine_filter('some_thumb')) }}\" />
+                              </a>
+                              {% else %}
+                              {{ 'no photos'|trans }}
+                              {% endif %}
+
+                            </a>
+                          </div>
+                          <!-- /.image -->
+
                         </div>
-                        <!-- /.image -->
+                        <div class=\"product-info\">
+                          <h3 class=\"name\"><a href=\"#\">{{ entity.name }}</a></h3>
+                        </div>
 
                       </div>
-                      <div class=\"product-info\">
-                        <h3 class=\"name\"><a href=\"#\">{{ entity.name }}</a></h3>
-                      </div>
+                      <!-- /.product -->
 
                     </div>
-                    <!-- /.product -->
-
+                    <!-- /.products -->
                   </div>
-                  <!-- /.products -->
-                   </div>
-                      </div>
-                      {% endfor %}   
-                </div></div>
-             
-              <div class=\"owl-controls clickable\"><div class=\"owl-buttons\"><div class=\"owl-prev\"></div><div class=\"owl-next\"></div></div></div></div>
-
-              <!-- /.home-owl-carousel -->
-            </div>
-          </section>
-
- 
-        
-           
-             
-        
-         
-    </div>
-     
-            <div class=\"row\">
-              <div class=\"col-md-12\">
-                <div class=\"cnt-strip\">
-                  <div class=\"image1\"> 
-                  
-                   {% for ad in Ads %}
-                     {# {{ad.slideOrder == 'top'}} #}
-              {% if ad.slideOrder == 'MID' %}
-                <a class=\"fancybox\" rel=\"group\" href=\"{{ path('show_product', {'slug' : ad.slug}) }}\">
-                   <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"{{ asset('uploads/images/' ~ ad.path)   }}\" alt=\"\">
-              </a>
-              {% endif %}
-            {% endfor %}
-                  </div>
-                 
-                  <!-- /.new-label -->
                 </div>
-                <!-- /.wide-banner -->
+                {% endfor %}
               </div>
-              <!-- /.col -->
-
-
-            </div>
-            <!-- /.row -->
-         
-    <div class=\"row\">
-        <div class=\"col-md-12\">
-       
-             <div class=\"more-info-tab clearfix \">
-                <h3 class=\"new-product-title pull-left\">{{ 'layout.index.latestproducts'|trans }}</h3>
-              <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
-                <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
-              </ul>
-              <!-- /.nav-tabs --> 
-            </div>
-            <div class=\"tab-content outer-top-xs\">
-                    <div class=\"tab-pane in active\" id=\"all\">
-                            <div class=\"product-slider\">
-                                <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
-                                    <div class=\"owl-wrapper-outer\">
-                                        <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
-                                                {% for product in latest_products %}
-                                                    {{ include('@Shop/Partials/productPreview.html.twig') }}
-                                                {% endfor %}
-                                        </div>
-                                    </div>
-                                 </div>
-                                </div>
-                            </div>
             </div>
 
+            <div class=\"owl-controls clickable\">
+              <div class=\"owl-buttons\">
+                <div class=\"owl-prev\"></div>
+                <div class=\"owl-next\"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.home-owl-carousel -->
         </div>
+      </section>
+
     </div>
-    <div class=\"row\">
-              <div class=\"col-md-12\">
-                <div class=\"cnt-strip\">
-                  <div class=\"image1\">  
-                  
-                   {% for ad in Ads %}
-                   {% if ad.slideOrder == 'Bottuom' %}
-                <a class=\"fancybox\" rel=\"group\" href=\"{{ path('show_product', {'slug' : ad.slug}) }}\">
-                   <img style=\"    width: 100%;\" class=\"img-responsive\" src=\"{{ asset('uploads/images/' ~ ad.path)   }}\" alt=\"\">
-              </a>
-              {% endif %}
+
+    <div class=\"row\" style=\"margin:30px;\">
+      <div class=\"col-md-12\">
+        <div class=\"cnt-strip\">
+          <div class=\"image1\">
+
+            {% for ad in Ads %}
+            {# {{ad.slideOrder == 'top'}} #}
+            {% if ad.slideOrder == 'MID' %}
+            <br>
+            <a class=\"fancybox\" rel=\"group\" href=\"{{ path('show_product', {'slug' : ad.slug}) }}\">
+              <img style=\"width: 100%;\" class=\"img-responsive\" src=\"{{ asset('uploads/images/' ~ ad.path)   }}\"
+                alt=\"\">
+            </a>
+            {% endif %}
             {% endfor %}
-                  
+          </div>
+
+          <!-- /.new-label -->
+        </div>
+        <!-- /.wide-banner -->
+      </div>
+      <!-- /.col -->
+
+
+    </div>
+    <!-- /.row -->
+
+    <div class=\"row\">
+      <div class=\"col-md-12\">
+
+        <div class=\"more-info-tab clearfix \">
+          <h3 class=\"new-product-title pull-left\">{{ 'layout.index.latestproducts'|trans }}</h3>
+          <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
+            <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
+          </ul>
+          <!-- /.nav-tabs -->
+        </div>
+        <div class=\"tab-content outer-top-xs\">
+          <div class=\"tab-pane in active\" id=\"all\">
+            <div class=\"product-slider\">
+              <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+                <div class=\"owl-wrapper-outer\">
+                  <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
+                    {% for product in latest_products %}
+                    {{ include('@Shop/Partials/productPreview.html.twig') }}
+                    {% endfor %}
                   </div>
-                
-                  <!-- /.new-label -->
                 </div>
-                <!-- /.wide-banner -->
               </div>
-              <!-- /.col -->
-
-
             </div>
-            <!-- /.row -->
-    <div class=\"row\">
-        <div class=\"col-md-12\">
-                 <div class=\"more-info-tab clearfix \">
-                <h3 class=\"new-product-title pull-left\">{{ 'layout.index.featuredproducts'|trans }}</h3>
-              <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
-                <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
-                <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
-              </ul>
-              <!-- /.nav-tabs --> 
-            </div>
-            <div class=\"tab-content outer-top-xs\">
-                    <div class=\"tab-pane in active\" id=\"all\">
-                            <div class=\"product-slider\">
-                                <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
-                                    <div class=\"owl-wrapper-outer\">
-                                        <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
-         
-            {% for product in featured_products %}
-                {{ include('@Shop/Partials/productPreview.html.twig') }}
-            {% endfor %}
-                    
-                                        </div>
-                                    </div>
-                                 </div>
-                                </div>
-                            </div>
-            </div>
+          </div>
         </div>
+
+      </div>
     </div>
-    
-{% endblock page_content %}
-", "ShopBundle:Catalog:index.html.twig", "D:\\laragon\\www\\Qasima\\src\\Eshop\\ShopBundle/Resources/views/Catalog/index.html.twig");
+    <div class=\"row\">
+      <div class=\"col-md-12\">
+        <div class=\"cnt-strip\">
+          <div class=\"image1\">
+
+            {% for ad in Ads %}
+            {% if ad.slideOrder == 'Bottuom' %}
+            <br>
+            <a class=\"fancybox\" rel=\"group\" href=\"{{ path('show_product', {'slug' : ad.slug}) }}\">
+              <img style=\"width: 100%;\" class=\"img-responsive\" src=\"{{ asset('uploads/images/' ~ ad.path)   }}\"
+                alt=\"\">
+            </a>
+            {% endif %}
+            {% endfor %}
+
+          </div>
+
+          <!-- /.new-label -->
+        </div>
+        <!-- /.wide-banner -->
+      </div>
+      <!-- /.col -->
+
+
+    </div>
+    <!-- /.row -->
+    <div class=\"row\">
+      <div class=\"col-md-12\">
+        <div class=\"more-info-tab clearfix \">
+          <h3 class=\"new-product-title pull-left\">{{ 'layout.index.featuredproducts'|trans }}</h3>
+          <ul class=\"nav nav-tabs nav-tab-line pull-right\" id=\"new-products-1\">
+            <li class=\"active\"><a data-transition-type=\"backSlide\" href=\"#all\" data-toggle=\"tab\">All</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#smartphone\" data-toggle=\"tab\">Clothing</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#laptop\" data-toggle=\"tab\">Electronics</a></li>
+            <li><a data-transition-type=\"backSlide\" href=\"#apple\" data-toggle=\"tab\">Shoes</a></li>
+          </ul>
+          <!-- /.nav-tabs -->
+        </div>
+        <div class=\"tab-content outer-top-xs\">
+          <div class=\"tab-pane in active\" id=\"all\">
+            <div class=\"product-slider\">
+              <div class=\"owl-carousel home-owl-carousel custom-carousel owl-theme\" style=\"opacity: 1; display: block;\">
+                <div class=\"owl-wrapper-outer\">
+                  <div class=\"owl-wrapper\" style=\"width: 2850px; left: 0px; display: block;\">
+
+                    {% for product in featured_products %}
+                    {{ include('@Shop/Partials/productPreview.html.twig') }}
+                    {% endfor %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock page_content %}", "ShopBundle:Catalog:index.html.twig", "D:\\laragon\\www\\qassima\\src\\Eshop\\ShopBundle/Resources/views/Catalog/index.html.twig");
     }
 }

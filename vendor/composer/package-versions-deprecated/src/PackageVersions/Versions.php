@@ -100,7 +100,7 @@ final class Versions
   'zendframework/zend-eventmanager' => '3.2.1@a5e2583a211f73604691586b8406ff7296a946dd',
   'sensio/generator-bundle' => 'v3.1.7@28cbaa244bd0816fd8908b93f90380bcd7b67a65',
   'symfony/phpunit-bridge' => 'v3.4.46@8d05c61270c40f457e0fc11d47cc112c0f2e3606',
-  'morozovalexander/symfocommerce' => 'No version set (parsed as 1.0.0)@',
+  'morozovalexander/symfocommerce' => 'dev-main@ce668a799db875e5ef5dc0e6ddc69f84ca6450ca',
 );
 
     private function __construct()

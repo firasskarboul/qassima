@@ -149,21 +149,11 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
                     ";
         }
         // line 43
-        echo "                     <li>
-                        <a href=\"";
-        // line 44
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("showcart");
-        echo "\">
-                            <span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span>
-                            ";
-        // line 46
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("ShopBundle:Cart:navbarCart"));
-        echo "
-                        </a>
-                    </li>
-               
+        echo "                     ";
+        // line 49
+        echo "               
               
-              <li><a href=\"sign-in.html\"><i class=\"icon fa fa-lock\"></i>Become a Vendor</a></li>
+              <li><a href=\"#\"><i class=\"icon fa fa-lock\"></i>Become a Vendor</a></li>
             </ul>
           </div>
           <!-- /.cnt-account -->
@@ -204,8 +194,8 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
             <div class=\"logo\"> <a href=\"";
         // line 89
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_main");
-        echo "\"> <img style=\"    width: 100px;
-    height: 50px;\" src=\"";
+        echo "\"> <img style=\"width: 100px;
+              height: 50px;\" src=\"";
         // line 90
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("index_main");
         echo "assets\\images\\logo.png\" alt=\"logo\"> </a> </div>
@@ -218,18 +208,14 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
             <!-- /.contact-row -->
             <!-- ============================================================= SEARCH AREA ============================================================= -->
             <div class=\"search-area\">
-             
               <form action=\"";
-        // line 101
+        // line 100
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("search");
         echo "\" role=\"search\" method=\"GET\" >
                 <div class=\"control-group\">
                   <input class=\"search-field\" id=\"search_phrase\" name=\"search_phrase\" placeholder=\"Search here...\">
-                  <button type=\"submit\" class=\"btn btn-default\">
-\t\t\t\t\t\t\t\t<span class=\"glyphicon glyphicon-search\">
-\t\t\t\t\t\t\t\t\t<span class=\"sr-only\">Search</span>
-\t\t\t\t\t\t\t\t</span>
-                            </button></div>
+                  <button type=\"submit\" class=\"search-button\" style=\"border:0;\"></button>
+                </div>
               </form>
             </div>
             <!-- /.search-area -->
@@ -247,36 +233,69 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
                 <div class=\"navbar-collapse collapse\" id=\"mc-horizontal-menu-collapse\">
                   <div class=\"nav-outer\">
                     <ul class=\"nav navbar-nav\">
-                      <li class=\"dropdown\"> <a href=\"#\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\">Deals</a>
-                        <ul class=\"dropdown-menu pages\">
-                          <li>
-                            <div class=\"yamm-content\">
-                              <div class=\"row\">
-                                <div class=\"col-xs-12 col-menu\">
-                                  <ul class=\"links\">
-                                    <li><a href=\"deals-grid.html\">Grid/List View</a></li>
-                                    <li><a href=\"deals-detail.html\">Deal Detail</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+
+                        <li class=\"dropdown\">
+
+                             <a href=\"";
+        // line 125
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_main");
+        echo "\" >Home</a>
+                        
 
                       </li>
-                             <li class=\"dropdown\"> 
+
+                      <li class=\"dropdown\"> <a href=\"#\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\">All Deals</a>
+                       
+
+                      </li>
+                             <li class=\"dropdown\">
+
                              <a href=\"";
-        // line 144
+        // line 136
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("Contact_new");
-        echo "\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\">Contact</a>
+        echo "\" >Contact</a>
                         
 
                       </li>
                        
+
+
+
+";
+        // line 146
+        echo "
+
+
+
                        ";
-        // line 150
-        echo "                      
+        // line 151
+        echo "     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+     <li></li>
+                       <div class=\"top-cart-row\">
+         
+
+              <div class=\"dropdown dropdown-cart\"> 
+              <a href=\"";
+        // line 157
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("showcart");
+        echo "\" class=\"dropdown-toggle lnk-cart\" data-toggle=\"dropdown\">
+                  
+                      ";
+        // line 159
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("ShopBundle:Cart:navbarCart"));
+        echo "
+
+
+                </a>
+                   ";
+        // line 167
+        echo "              </div>
+    
+            </div>
+                      
                         </ul>
+
+
                       </li>
 
                     </ul>
@@ -294,7 +313,6 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
             <div class=\"top-cart-row\">
               <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
 
-               
               <!-- /.dropdown-cart -->
 
               <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
@@ -313,29 +331,24 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
 
     </div>
     <!-- /.main-header -->
-
-
-
   </header>
     <!-- Static navbar -->
      
     <div class=\"container-fluid\">
-        <div class=\"row\">
-            <div  class=\"col-md-2 \"> 
-            </div>
-             <div  class=\"col-md-8 col-md-offset-2\">
-                ";
-        // line 199
+      <div class=\"row\">
+        <div class=\"col-md-2\"></div>
+        <div  class=\"col-md-8 col-md-offset-2\">
+          ";
+        // line 216
         $this->displayBlock('page_content', $context, $blocks);
-        // line 201
-        echo "                <div class=\"row\" id=\"latest-products\"></div>
-           </div>
-            <div  class=\"col-md-2 \"> 
-            </div>
+        // line 218
+        echo "          <div class=\"row\" id=\"latest-products\"></div>
         </div>
+        <div class=\"col-md-2 \"></div>
+      </div>
     </div>
  <footer id=\"footer\" class=\"footer color-bg\">
-      <div class=\"footer-bottom\">
+      <div class=\"footer-bottom\" style=\"padding-top: 2px; margin-top: 50px\">
         <div class=\"container\">
           <div class=\"row\">
             <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-3\">
@@ -413,41 +426,16 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
           </div>
         </div>
       </div>
-      <div class=\"copyright-bar white-bg\">
-        <div class=\"container\">
-          <div class=\"col-xs-12 col-sm-7 col-md-12 col-lg-7 del-info\">
-            We have our very own fleet of delivery vans. Your order will be packed with care at our warehouse and
-            delivered right to your door by our friendly DealDots team.
-          </div>
-
-          <div class=\"col-xs-12 col-sm-5 col-md-12 col-lg-5 no-padding\">
-            <div class=\"clearfix payment-methods\">
-              <ul>
-                <li><img src=\"assets\\images\\payments\\1.png\" alt=\"\"></li>
-                <li><img src=\"assets\\images\\payments\\2.png\" alt=\"\"></li>
-                <li><img src=\"assets\\images\\payments\\3.png\" alt=\"\"></li>
-                <li><img src=\"assets\\images\\payments\\4.png\" alt=\"\"></li>
-
-              </ul>
-            </div>
-            <!-- /.payment-methods -->
-          </div>
-        </div>
-      </div>
+      
       <div class=\"copyright-bar\">
         <div class=\"container\">
           <div class=\"col-xs-12 col-sm-12 no-padding social\">
             <ul class=\"link\">
               <li class=\"fb\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Facebook\"></a></li>
               <li class=\"tw\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Twitter\"></a></li>
-              <li class=\"googleplus\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"GooglePlus\"></a></li>
-              <li class=\"rss\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"RSS\"></a></li>
-              <li class=\"pintrest\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"PInterest\"></a></li>
-              <li class=\"linkedin\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Linkedin\"></a></li>
-              <li class=\"youtube\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Youtube\"></a></li>
             </ul>
           </div>
-          <div class=\"col-xs-12 col-sm-12 no-padding copyright\">&copy; 2020 Qasima. All Rights Reserved. </div>
+          <div class=\"col-xs-12 col-sm-12 no-padding copyright\">&copy; 2020 Qassima. All Rights Reserved. </div>
 
         </div>
       </div>
@@ -458,91 +446,91 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
 
     }
 
-    // line 199
+    // line 216
     public function block_page_content($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_content"));
 
-        // line 200
-        echo "                ";
+        // line 217
+        echo "          ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 326
+    // line 317
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 327
+        // line 318
         echo "    ";
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
 
     <script src=\"";
-        // line 329
+        // line 320
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/js.cookie.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 330
+        // line 321
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap-confirmation.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
     <script src=\"";
-        // line 331
+        // line 322
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/cart.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
     <script src=\"";
-        // line 332
+        // line 323
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/scripts.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
    ";
-        // line 335
+        // line 326
         echo "  <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/bootstrap-hover-dropdown.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 336
+        // line 327
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 337
+        // line 328
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/echo.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 338
+        // line 329
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/jquery.easing-1.3.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 339
+        // line 330
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/bootstrap-slider.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 340
+        // line 331
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/jquery.rateit.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 341
+        // line 332
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/lightbox.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 342
+        // line 333
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/bootstrap-select.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 343
+        // line 334
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/wow.min.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 344
+        // line 335
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/scripts.js"), "html", null, true);
         echo "\"></script>
   <script src=\"";
-        // line 345
+        // line 336
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/shop_js/countdown.js"), "html", null, true);
         echo "\"></script>
   <script>
@@ -563,25 +551,25 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
         //set path urls
         var urls = [];
         urls['ajax_like'] = '";
-        // line 363
+        // line 354
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ajax_like");
         echo "';
         urls['ajax_is_liked_product'] = '";
-        // line 364
+        // line 355
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ajax_is_liked_product");
         echo "';
         urls['ajax_get_last_seen_products'] = '";
-        // line 365
+        // line 356
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("ajax_get_last_seen_products");
         echo "';
         //set translated messages
         var messages = [];
         messages['mustberegistered'] = '";
-        // line 368
+        // line 359
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("layout.messages.mustberegistered", [], "ShopBundle"), "html", null, true);
         echo "';
         messages['productnotfound'] = '";
-        // line 369
+        // line 360
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("layout.messages.productnotfound", [], "ShopBundle"), "html", null, true);
         echo "';
 
@@ -590,8 +578,8 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
 
             //get requestUri
              var requestUri = '";
-        // line 375
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 375, $this->source); })()), "request", [], "any", false, false, false, 375), "requestUri", [], "any", false, false, false, 375), "html", null, true);
+        // line 366
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 366, $this->source); })()), "request", [], "any", false, false, false, 366), "requestUri", [], "any", false, false, false, 366), "html", null, true);
         echo "';
 
              //highlight current route
@@ -620,7 +608,7 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
 
     public function getDebugInfo()
     {
-        return array (  594 => 375,  585 => 369,  581 => 368,  575 => 365,  571 => 364,  567 => 363,  546 => 345,  542 => 344,  538 => 343,  534 => 342,  530 => 341,  526 => 340,  522 => 339,  518 => 338,  514 => 337,  510 => 336,  505 => 335,  501 => 332,  497 => 331,  493 => 330,  489 => 329,  483 => 327,  476 => 326,  469 => 200,  462 => 199,  331 => 201,  329 => 199,  278 => 150,  270 => 144,  224 => 101,  210 => 90,  206 => 89,  160 => 46,  155 => 44,  152 => 43,  144 => 41,  142 => 40,  139 => 39,  137 => 38,  126 => 29,  119 => 28,  101 => 16,  95 => 13,  91 => 12,  87 => 11,  83 => 10,  79 => 9,  75 => 8,  71 => 7,  67 => 6,  62 => 5,  55 => 4,  38 => 1,);
+        return array (  582 => 366,  573 => 360,  569 => 359,  563 => 356,  559 => 355,  555 => 354,  534 => 336,  530 => 335,  526 => 334,  522 => 333,  518 => 332,  514 => 331,  510 => 330,  506 => 329,  502 => 328,  498 => 327,  493 => 326,  489 => 323,  485 => 322,  481 => 321,  477 => 320,  471 => 318,  464 => 317,  457 => 217,  450 => 216,  345 => 218,  343 => 216,  292 => 167,  285 => 159,  280 => 157,  272 => 151,  266 => 146,  255 => 136,  241 => 125,  213 => 100,  200 => 90,  196 => 89,  154 => 49,  152 => 43,  144 => 41,  142 => 40,  139 => 39,  137 => 38,  126 => 29,  119 => 28,  101 => 16,  95 => 13,  91 => 12,  87 => 11,  83 => 10,  79 => 9,  75 => 8,  71 => 7,  67 => 6,  62 => 5,  55 => 4,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -667,15 +655,15 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
               {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
                         <li><a href=\"{{ path('favourites') }}\" class=\"icon fa fa-heart\">{{ 'Wishlist'|trans }}</a></li>
                     {% endif %}
-                     <li>
+                     {# <li>
                         <a href=\"{{ path('showcart') }}\">
                             <span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span>
                             {{ render(controller('ShopBundle:Cart:navbarCart')) }}
                         </a>
-                    </li>
+                    </li> #}
                
               
-              <li><a href=\"sign-in.html\"><i class=\"icon fa fa-lock\"></i>Become a Vendor</a></li>
+              <li><a href=\"#\"><i class=\"icon fa fa-lock\"></i>Become a Vendor</a></li>
             </ul>
           </div>
           <!-- /.cnt-account -->
@@ -713,8 +701,8 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
         <div class=\"row\">
           <div class=\"col-xs-12 col-lg-2 col-sm-12 col-md-3 logo-holder\">
             <!-- ============================================================= LOGO ============================================================= -->
-            <div class=\"logo\"> <a href=\"{{ path('index_main') }}\"> <img style=\"    width: 100px;
-    height: 50px;\" src=\"{{ url('index_main') }}assets\\images\\logo.png\" alt=\"logo\"> </a> </div>
+            <div class=\"logo\"> <a href=\"{{ path('index_main') }}\"> <img style=\"width: 100px;
+              height: 50px;\" src=\"{{ url('index_main') }}assets\\images\\logo.png\" alt=\"logo\"> </a> </div>
             <!-- /.logo -->
             <!-- ============================================================= LOGO : END ============================================================= -->
           </div>
@@ -724,15 +712,11 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
             <!-- /.contact-row -->
             <!-- ============================================================= SEARCH AREA ============================================================= -->
             <div class=\"search-area\">
-             
               <form action=\"{{ path('search') }}\" role=\"search\" method=\"GET\" >
                 <div class=\"control-group\">
                   <input class=\"search-field\" id=\"search_phrase\" name=\"search_phrase\" placeholder=\"Search here...\">
-                  <button type=\"submit\" class=\"btn btn-default\">
-\t\t\t\t\t\t\t\t<span class=\"glyphicon glyphicon-search\">
-\t\t\t\t\t\t\t\t\t<span class=\"sr-only\">Search</span>
-\t\t\t\t\t\t\t\t</span>
-                            </button></div>
+                  <button type=\"submit\" class=\"search-button\" style=\"border:0;\"></button>
+                </div>
               </form>
             </div>
             <!-- /.search-area -->
@@ -750,32 +734,58 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
                 <div class=\"navbar-collapse collapse\" id=\"mc-horizontal-menu-collapse\">
                   <div class=\"nav-outer\">
                     <ul class=\"nav navbar-nav\">
-                      <li class=\"dropdown\"> <a href=\"#\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\">Deals</a>
-                        <ul class=\"dropdown-menu pages\">
-                          <li>
-                            <div class=\"yamm-content\">
-                              <div class=\"row\">
-                                <div class=\"col-xs-12 col-menu\">
-                                  <ul class=\"links\">
-                                    <li><a href=\"deals-grid.html\">Grid/List View</a></li>
-                                    <li><a href=\"deals-detail.html\">Deal Detail</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+
+                        <li class=\"dropdown\">
+
+                             <a href=\"{{ path('index_main') }}\" >Home</a>
+                        
 
                       </li>
-                             <li class=\"dropdown\"> 
-                             <a href=\"{{path('Contact_new')}}\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\">Contact</a>
+
+                      <li class=\"dropdown\"> <a href=\"#\" class=\"dropdown-toggle\" data-hover=\"dropdown\" data-toggle=\"dropdown\">All Deals</a>
+                       
+
+                      </li>
+                             <li class=\"dropdown\">
+
+                             <a href=\"{{path('Contact_new')}}\" >Contact</a>
                         
 
                       </li>
                        
+
+
+
+{# 
+                         {% include '@Shop/Partials/navbarAuthBlock.html.twig' %} #}
+
+
+
+
                        {# {{ render(controller('ShopBundle:LayoutsUtility:staticPagesMenu')) }} #}
+     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+     <li></li>
+                       <div class=\"top-cart-row\">
+         
+
+              <div class=\"dropdown dropdown-cart\"> 
+              <a href=\"{{ path('showcart') }}\" class=\"dropdown-toggle lnk-cart\" data-toggle=\"dropdown\">
+                  
+                      {{ render(controller('ShopBundle:Cart:navbarCart')) }}
+
+
+                </a>
+                   {# <a href=\"{{ path('showcart') }}\">
+                            <span class=\"glyphicon glyphicon-shopping-cart\" aria-hidden=\"true\"></span>
+                            {{ render(controller('ShopBundle:Cart:navbarCart')) }}
+                        </a> #}
+              </div>
+    
+            </div>
                       
                         </ul>
+
+
                       </li>
 
                     </ul>
@@ -793,7 +803,6 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
             <div class=\"top-cart-row\">
               <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
 
-               
               <!-- /.dropdown-cart -->
 
               <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
@@ -812,27 +821,22 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
 
     </div>
     <!-- /.main-header -->
-
-
-
   </header>
     <!-- Static navbar -->
      
     <div class=\"container-fluid\">
-        <div class=\"row\">
-            <div  class=\"col-md-2 \"> 
-            </div>
-             <div  class=\"col-md-8 col-md-offset-2\">
-                {% block page_content %}
-                {% endblock page_content %}
-                <div class=\"row\" id=\"latest-products\"></div>
-           </div>
-            <div  class=\"col-md-2 \"> 
-            </div>
+      <div class=\"row\">
+        <div class=\"col-md-2\"></div>
+        <div  class=\"col-md-8 col-md-offset-2\">
+          {% block page_content %}
+          {% endblock page_content %}
+          <div class=\"row\" id=\"latest-products\"></div>
         </div>
+        <div class=\"col-md-2 \"></div>
+      </div>
     </div>
  <footer id=\"footer\" class=\"footer color-bg\">
-      <div class=\"footer-bottom\">
+      <div class=\"footer-bottom\" style=\"padding-top: 2px; margin-top: 50px\">
         <div class=\"container\">
           <div class=\"row\">
             <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-3\">
@@ -910,41 +914,16 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
           </div>
         </div>
       </div>
-      <div class=\"copyright-bar white-bg\">
-        <div class=\"container\">
-          <div class=\"col-xs-12 col-sm-7 col-md-12 col-lg-7 del-info\">
-            We have our very own fleet of delivery vans. Your order will be packed with care at our warehouse and
-            delivered right to your door by our friendly DealDots team.
-          </div>
-
-          <div class=\"col-xs-12 col-sm-5 col-md-12 col-lg-5 no-padding\">
-            <div class=\"clearfix payment-methods\">
-              <ul>
-                <li><img src=\"assets\\images\\payments\\1.png\" alt=\"\"></li>
-                <li><img src=\"assets\\images\\payments\\2.png\" alt=\"\"></li>
-                <li><img src=\"assets\\images\\payments\\3.png\" alt=\"\"></li>
-                <li><img src=\"assets\\images\\payments\\4.png\" alt=\"\"></li>
-
-              </ul>
-            </div>
-            <!-- /.payment-methods -->
-          </div>
-        </div>
-      </div>
+      
       <div class=\"copyright-bar\">
         <div class=\"container\">
           <div class=\"col-xs-12 col-sm-12 no-padding social\">
             <ul class=\"link\">
               <li class=\"fb\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Facebook\"></a></li>
               <li class=\"tw\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Twitter\"></a></li>
-              <li class=\"googleplus\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"GooglePlus\"></a></li>
-              <li class=\"rss\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"RSS\"></a></li>
-              <li class=\"pintrest\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"PInterest\"></a></li>
-              <li class=\"linkedin\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Linkedin\"></a></li>
-              <li class=\"youtube\"><a target=\"_blank\" rel=\"nofollow\" href=\"#\" title=\"Youtube\"></a></li>
             </ul>
           </div>
-          <div class=\"col-xs-12 col-sm-12 no-padding copyright\">&copy; 2020 Qasima. All Rights Reserved. </div>
+          <div class=\"col-xs-12 col-sm-12 no-padding copyright\">&copy; 2020 Qassima. All Rights Reserved. </div>
 
         </div>
       </div>
@@ -1010,6 +989,6 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
         }
     </script>
 {% endblock %}
-", "@Shop/layout.html.twig", "D:\\laragon\\www\\Qasima\\src\\Eshop\\ShopBundle\\Resources\\views\\layout.html.twig");
+", "@Shop/layout.html.twig", "D:\\laragon\\www\\qassima\\src\\Eshop\\ShopBundle\\Resources\\views\\layout.html.twig");
     }
 }

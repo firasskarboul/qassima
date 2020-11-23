@@ -11,6 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
+use Skies\QRcodeBundle\Generator\Generator;
 
 class CartController extends Controller
 {
@@ -89,7 +90,17 @@ class CartController extends Controller
                 'admin_email' => $this->getParameter('admin_email')
             ]);
 
-            return $this->render('@Shop/Cart/thankYou.html.twig'); //redirect to thankyou page
+            $cc="Product 14";
+            $options = array(
+                'code'   => $cc,
+                'type'   => 'qrcode',
+                'format' => 'png',
+            );
+            
+            $generator =  new Generator();
+            $barcode = $generator->generate($options);
+
+            return $this->render('@Shop/Cart/thankYou.html.twig', array('code'=>$barcode)); //redirect to thankyou page
         }
 
         if (is_object($user = $this->getUser())) {

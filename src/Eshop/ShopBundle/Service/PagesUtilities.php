@@ -78,9 +78,9 @@ class PagesUtilities
         $productRepository = $this->em->getRepository('ShopBundle:Product');
 
         $cart = $this->getCartFromCookies($request);
-        if ((!$cart) || !(count($cart))) {
-            return false;
-        }
+        // if ((!$cart) || !(count($cart))) {
+        //     return false;
+        // }
 
         //parse cart json form cookies
         $sum = 0; //total control sum of the order

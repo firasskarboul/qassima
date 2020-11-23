@@ -1,9 +1,18 @@
 {% trans_default_domain 'ShopBundle' %}
 <h3 class="text-center">{{ 'layout.lastseen.header'|trans }}</h3>
-<div class="row">
-<div class="col-md-12">
-    {% for product in products %}
-        {{ include('@Shop/Partials/productPreview.html.twig') }}
-    {% endfor %}
-</div>
-</div>
+ <div class="tab-content outer-top-xs">
+          <div class="tab-pane in active" id="all">
+            <div class="product-slider">
+              <div class="owl-carousel home-owl-carousel custom-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                  <div class="owl-wrapper" style="width: 2850px; left: 0px; display: block;">
+
+                    {% for product in products %}
+                        {{ include('@Shop/Partials/productPreview.html.twig') }}
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
