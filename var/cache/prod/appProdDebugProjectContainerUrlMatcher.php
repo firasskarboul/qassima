@@ -895,8 +895,8 @@ class appProdDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
                 not_admin_product_new:
 
                 // admin_product_show
-                if (0 === strpos($pathinfo, '/admin/product/api') && preg_match('#^/admin/product/api/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
-                    $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_product_show']), array (  '_controller' => 'Eshop\\AdminBundle\\Controller\\ProductController::showApiAction',));
+                if (preg_match('#^/admin/product/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                    $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'admin_product_show']), array (  '_controller' => 'Eshop\\AdminBundle\\Controller\\ProductController::showAction',));
                     if (!in_array($canonicalMethod, ['GET'])) {
                         $allow = array_merge($allow, ['GET']);
                         goto not_admin_product_show;

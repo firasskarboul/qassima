@@ -278,7 +278,7 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
               <a href=\"";
         // line 157
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("showcart");
-        echo "\" class=\"dropdown-toggle lnk-cart\" data-toggle=\"dropdown\">
+        echo "\" class=\"dropdown-toggle lnk-cart\"  >
                   
                       ";
         // line 159
@@ -769,7 +769,7 @@ class __TwigTemplate_9a2a7180e8e02fff68ca740c26b52d0165fcf753e90fe47f076a44d6b3d
          
 
               <div class=\"dropdown dropdown-cart\"> 
-              <a href=\"{{ path('showcart') }}\" class=\"dropdown-toggle lnk-cart\" data-toggle=\"dropdown\">
+              <a href=\"{{ path('showcart') }}\" class=\"dropdown-toggle lnk-cart\"  >
                   
                       {{ render(controller('ShopBundle:Cart:navbarCart')) }}
 

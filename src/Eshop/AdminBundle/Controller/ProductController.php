@@ -11,7 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Eshop\ShopBundle\Entity\Product;
-use Symfony\Component\HttpFoundation\JsonResponse;
+
 /**
  * Product controller.
  *
@@ -109,30 +109,6 @@ class ProductController extends Controller
         return ['entity' => $product,
                 'delete_form' => $deleteForm->createView()
         ];
-    }
-      /**
-     * Finds and displays a Product entity.
-     *
-     * @Route("/api/{id}", name="admin_product_show")
-     * @Method("GET")
-     * @Template()
-     */
-    public function showApiAction(Product $product)
-    {
-        $deleteForm = $this->createDeleteForm($product);
-
-        if ($product->getDeleted()) {
-            return $this->render('@Admin/Product/deleted.html.twig');
-        }
-        $data=['id'=>$product->getid(),'Titre'=>$product->getName() , 'descriptionMeta'=>$product->getMetaDescription() ,
-        'date'=>$product->getDescription(),'description'=>$product->getDateCreated()  ,  'Nprice'=>$product->getPrice(),'Quantity'=>$product->getQuantity(), 'category'=>$product->getCategory(), 'images'=>$product->getImages()
-    
-    
-    ];
-    //  return new JsonResponse($data);
-        return ['entity' => $product,
-                'delete_form' => $deleteForm->createView()
-        ]; 
     }
 
     /**
