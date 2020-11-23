@@ -1,0 +1,236 @@
+{% extends '@Shop/layout.html.twig' %}
+{% trans_default_domain 'ShopBundle' %}
+
+{% block title %}
+{# {{ 'layout.navbar.sitename'|trans }} - {{ 'categories.menu.header'|trans }} #}
+QASIMA
+{% endblock title %}
+
+{% block page_content -%}
+</div>
+<div class="container">
+  <div class="row" style="margin:30px;">
+    <div class="col-md-12" >
+      <div class="cnt-strip">
+        <div class="image1">
+
+
+
+
+          {% for ad in Ads %}
+          {# {{ad.slideOrder == 'top'}} #}
+          {% if ad.slideOrder == 'top' %}
+          <a class="fancybox" rel="group" href="{{ path('show_product', {'slug' : ad.slug}) }}">
+            <img style="    width: 100%;" class="img-responsive" src="{{ asset('uploads/images/' ~ ad.path)   }}"
+              alt="">
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        <!-- /.new-label -->
+      </div>
+      <!-- /.wide-banner -->
+    </div>
+    <!-- /.col -->
+
+  </div>
+  <!-- /.row -->
+  <div class="outer-top-ts top-banner">
+    <div class="container">
+      <img class="img-responsive" src="{{ asset('assets/images/banners/top-banner.png') }}" alt=""></div>
+  </div>
+  {% if slides|length %}
+  {{ include('@Shop/Partials/slidesBlock.html.twig') }}
+  {% endif %}
+  <div class="row" style="margin:30px;">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <!-- ========================================== SECTION – HERO ========================================= -->
+
+
+
+      <!-- ========================================= SECTION – HERO : END ========================================= -->
+
+
+      <!-- ============================================== STORES SECTION ============================================== -->
+      <section class="section featured-section wow fadeInUp animated" style="visibility: visible;">
+        <h2>Stores For You</h2>
+        <div class="featured-product">
+          <div class="owl-carousel homepage-owl-carousel custom-carousel owl-theme outer-top-xs"
+            style="opacity: 1; display: block;">
+            <div class="owl-wrapper-outer">
+              <div class="owl-wrapper" style="width: 2838px; left: 0px; display: block;">
+
+
+
+
+
+                {% for entity in catss %}
+                <div class="owl-item" style="width: 129px;">
+                  <div class="item item-carousel">
+                    <div class="products">
+                      <div class="product">
+                        <div class="product-image">
+                          <div class="image">
+                            <a href="#">
+                              {% if entity.path %}
+                              <a class="fancybox" rel="group" href="{{ path('category', {'slug' : entity.slug}) }}">
+                                <img
+                                  src="{{ asset( ('uploads/images/' ~ entity.path) | imagine_filter('some_thumb')) }}" />
+                              </a>
+                              {% else %}
+                              {{ 'no photos'|trans }}
+                              {% endif %}
+
+                            </a>
+                          </div>
+                          <!-- /.image -->
+
+                        </div>
+                        <div class="product-info">
+                          <h3 class="name"><a href="#">{{ entity.name }}</a></h3>
+                        </div>
+
+                      </div>
+                      <!-- /.product -->
+
+                    </div>
+                    <!-- /.products -->
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div class="owl-controls clickable">
+              <div class="owl-buttons">
+                <div class="owl-prev"></div>
+                <div class="owl-next"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.home-owl-carousel -->
+        </div>
+      </section>
+
+    </div>
+
+    <div class="row" style="margin:30px;">
+      <div class="col-md-12">
+        <div class="cnt-strip">
+          <div class="image1">
+
+            {% for ad in Ads %}
+            {# {{ad.slideOrder == 'top'}} #}
+            {% if ad.slideOrder == 'MID' %}
+            <br>
+            <a class="fancybox" rel="group" href="{{ path('show_product', {'slug' : ad.slug}) }}">
+              <img style="width: 100%;" class="img-responsive" src="{{ asset('uploads/images/' ~ ad.path)   }}"
+                alt="">
+            </a>
+            {% endif %}
+            {% endfor %}
+          </div>
+
+          <!-- /.new-label -->
+        </div>
+        <!-- /.wide-banner -->
+      </div>
+      <!-- /.col -->
+
+
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="more-info-tab clearfix ">
+          <h3 class="new-product-title pull-left">{{ 'layout.index.latestproducts'|trans }}</h3>
+          <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
+            <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">All</a></li>
+            <li><a data-transition-type="backSlide" href="#smartphone" data-toggle="tab">Clothing</a></li>
+            <li><a data-transition-type="backSlide" href="#laptop" data-toggle="tab">Electronics</a></li>
+            <li><a data-transition-type="backSlide" href="#apple" data-toggle="tab">Shoes</a></li>
+          </ul>
+          <!-- /.nav-tabs -->
+        </div>
+        <div class="tab-content outer-top-xs">
+          <div class="tab-pane in active" id="all">
+            <div class="product-slider">
+              <div class="owl-carousel home-owl-carousel custom-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                  <div class="owl-wrapper" style="width: 2850px; left: 0px; display: block;">
+                    {% for product in latest_products %}
+                    {{ include('@Shop/Partials/productPreview.html.twig') }}
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="cnt-strip">
+          <div class="image1">
+
+            {% for ad in Ads %}
+            {% if ad.slideOrder == 'Bottuom' %}
+            <br>
+            <a class="fancybox" rel="group" href="{{ path('show_product', {'slug' : ad.slug}) }}">
+              <img style="width: 100%;" class="img-responsive" src="{{ asset('uploads/images/' ~ ad.path)   }}"
+                alt="">
+            </a>
+            {% endif %}
+            {% endfor %}
+
+          </div>
+
+          <!-- /.new-label -->
+        </div>
+        <!-- /.wide-banner -->
+      </div>
+      <!-- /.col -->
+
+
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="more-info-tab clearfix ">
+          <h3 class="new-product-title pull-left">{{ 'layout.index.featuredproducts'|trans }}</h3>
+          <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
+            <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">All</a></li>
+            <li><a data-transition-type="backSlide" href="#smartphone" data-toggle="tab">Clothing</a></li>
+            <li><a data-transition-type="backSlide" href="#laptop" data-toggle="tab">Electronics</a></li>
+            <li><a data-transition-type="backSlide" href="#apple" data-toggle="tab">Shoes</a></li>
+          </ul>
+          <!-- /.nav-tabs -->
+        </div>
+        <div class="tab-content outer-top-xs">
+          <div class="tab-pane in active" id="all">
+            <div class="product-slider">
+              <div class="owl-carousel home-owl-carousel custom-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                  <div class="owl-wrapper" style="width: 2850px; left: 0px; display: block;">
+
+                    {% for product in featured_products %}
+                    {{ include('@Shop/Partials/productPreview.html.twig') }}
+                    {% endfor %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock page_content %}

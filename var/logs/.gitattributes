@@ -1,0 +1,2 @@
+dev.log filter=lfs diff=lfs merge=lfs -text
+prod.log filter=lfs diff=lfs merge=lfs -text

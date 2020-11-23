@@ -1,0 +1,156 @@
+
+{% extends "::base.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+<!-- -->
+    <link href="{{ asset('assets/css/dashboard-style.css') }}" rel="stylesheet">
+
+
+ 
+
+
+
+      <!-- Google font-->
+     <link href="{{ asset('assets/admin-css/css.css?family=Work+Sans:100,200,300,400,500,600,700,800,900') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin-css/css-1.css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin-css/font-awesome.css') }}" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/themify.css') }}">
+
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/slick.css') }}">
+
+    <!-- slick icon-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/jsgrid.css') }}">
+
+    <!-- jsgrid css-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/bootstrap.css') }}">
+
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/admin.css') }}">
+    
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/flag-icon.css') }}">
+
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/icofont.css') }}">
+
+    <!-- Prism css-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/prism.css') }}">
+
+    <!-- Chartist css -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/chartist.css') }}">
+
+    <!-- vector map css -->
+    <link rel="stylesheet" type="text/css" href=" {{ asset('assets/admin-css/vector-map.css') }}">
+
+
+
+
+{% endblock stylesheets %}
+
+{% block body %}
+
+<!-- page-wrapper Start-->
+<div class="page-wrapper">
+ <!-- Page Header Start-->
+    <div class="page-main-header">
+ 
+        <div class="main-header-left">
+            <div class="logo-wrapper"><a href="{{ path('index_main') }}">  
+            <img class="blur-up lazyloaded" style="width: 80px;" src="{{ asset('assets/images/logo.png') }}" alt=""></a></div>
+        </div>
+        <div class="main-header-right row">
+             
+            <div class="nav-right col">
+                <ul class="nav-menus">
+                    <li>
+                        <form class="form-inline search-form">
+                            <div class="form-group">
+                                <input class="form-control-plaintext" type="search" placeholder="Search.."><span class="d-sm-none mobile-search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="onhover-dropdown"><a class="txt-dark" href="#">
+                        <h6>EN</h6></a>
+                       
+                    </li>
+                  
+                     
+                        <ul class="notification-dropdown onhover-show-div p-0">
+                            
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square right_side_toggle">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <span class="dot"></span></a>
+                                </li>
+                                
+                    <li class="onhover-dropdown">
+                        <div class="media align-items-center">
+                        <img class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded" src="{{ asset('assets/images/Admin_avatar.png') }}" alt="header-user">
+                            <div class="dotted-animation"><span class="animate-circle"></span><span class="main-circle"></span></div>
+                        </div>
+                        <ul class="profile-dropdown onhover-show-div p-20 profile-dropdown-hover">
+                             {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                        <li><span class="pull-right"> <a href="{{ path('fos_user_security_logout') }}">{{ 'Logout'|trans }}</a></span></li>
+                    {% endif %}
+                    {% if is_granted('ROLE_ADMIN') %}
+                        
+                            <li><span class="pull-right"><a href="{{ path('admin_index') }}">{{ 'Administration panel'|trans }}</a></span></li>
+                       
+                    {% endif %}
+                         
+                    </ul>
+                    </li>
+                </ul>
+                <div class="d-lg-none mobile-toggle pull-right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-body-wrapper">
+      
+           
+                {% include "@Admin/Partials/admin-menu.html.twig" %}
+           
+            <div class="page-body">
+            {% block page_content %}
+
+            {% endblock page_content %}
+            </div>
+        
+    </div>
+    </div>
+
+</div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('assets/js/bootbox.min.js') }}"></script>
+    <script>
+        $(function() {
+            bootbox.addLocale('{{ app.request.locale }}', {
+                OK : '{{ 'OK'|trans }}',
+                CANCEL : '{{ 'cancel'|trans }}',
+                CONFIRM : '{{ 'yes'|trans }}'
+            });
+            bootbox.setDefaults({ locale: '{{ app.request.locale }}' });
+
+            $('.bootbox-submit-confirm').submit(function (e) {
+                var currentForm = this;
+                e.preventDefault();
+                bootbox.confirm("{{ 'Are you sure?'|trans }}", function (result) {
+                    if (result) {
+                        currentForm.submit();
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}
