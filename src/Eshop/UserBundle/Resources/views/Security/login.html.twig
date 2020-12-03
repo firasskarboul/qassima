@@ -1,87 +1,26 @@
-{% extends "::base.html.twig" %}
-
+{% extends "@Shop/layout.html.twig" %}
 {% trans_default_domain 'FOSUserBundle' %}
+ 
 
-{% block stylesheets %}
-    {{ parent() }}
-    <link href="{{ asset('assets/css/signin.css') }}" rel="stylesheet">
-    
-    <!-- Google font-->
-     <link href="{{ asset('assets/admin-css/css.css?family=Work+Sans:100,200,300,400,500,600,700,800,900') }}" rel="stylesheet">
-    <link href="{{ asset('assets/admin-css/css-1.css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i') }}" rel="stylesheet">
-    <link href="{{ asset('assets/admin-css/font-awesome.css') }}" rel="stylesheet">
+{% block title %}
+    {{ 'Create a new account'|trans }}
+{% endblock title %}
 
-    <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/themify.css') }}">
 
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/slick.css') }}">
-
-    <!-- slick icon-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/slick-theme.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/jsgrid.css') }}">
-
-    <!-- jsgrid css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/bootstrap.css') }}">
-
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin-css/admin.css') }}">
-
-     
-    
-{% endblock %}
-
-{% block body %}
+{% block page_content %}
     {% if error %}
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
 
+ <div class="col-md-12"> 
 
-<div class="page-wrapper">
-    <div class="authentication-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 p-0 card-left">
-                    <div class="card bg-primary">
-                        <div class="svg-icon">
-      <img style="    width: 100px;" src="{{ asset('assets/images/logo.png') }}" alt=" "   >
-                        </div>
-
-                        <div class="single-item">
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7 p-0 card-right">
-                    <div class="card tab2-card">
-                        <div class="card-body">
-                            <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="top-profile-tab" data-toggle="tab" href="#top-profile" role="tab" aria-controls="top-profile" aria-selected="true"><span class="icon-user mr-2"></span>Login</a>
-                                </li>
-                                 
-                            </ul>
-                            <div class="tab-content" id="top-tabContent">
-                                <div class="tab-pane fade show active" id="top-profile" role="tabpanel" aria-labelledby="top-profile-tab">
-                                   <form class="form-horizontal auth-form" action="{{ path("fos_user_security_check") }}" method="post">
+      <div class="sign-in-page">
+			<div class="row">
+ 
+{# 
+ 
+<form class="form-horizontal auth-form" action="{{ path("fos_user_security_check") }}" method="post">
                                      <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
                                         <div class="form-group">
                                          
@@ -115,63 +54,51 @@
                                                 <li><a class="icon-pinterest" href=""></a></li>
                                             </ul>
                                         </div>
-                                    </form>
-                                </div>
-                                
+                                    </form> #}
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="index.html" class="btn btn-primary back-btn"><i data-feather="arrow-left"></i>back</a>
-        </div>
-    </div>
+
+  <div class="col-md-6 col-sm-6 sign-in">
+	<h4 class="">Sign in</h4>
+	<p class="">Hello, Welcome to your account.</p>
+	<div class="social-sign-in outer-top-xs">
+		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Sign In with Facebook</a>
+		<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Sign In with Twitter</a>
+	</div>
+    <form class="register-form outer-top-xs" action="{{ path("fos_user_security_check") }}" method="post">
+                                     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
+ 
+		<div class="form-group">
+		    <label class="info-title" for="exampleInputEmail1">Username <span>*</span></label>
+		    <input type="text" class="form-control unicase-form-control text-input"  id="exampleInputEmail1" name="_username" value="{{ last_username }}"  >
+		</div>
+	  	<div class="form-group">
+		    <label class="info-title" for="exampleInputPassword1">{{ 'security.login.password'|trans }}<span>*</span></label>
+		    <input type="password"  name="_password" class="form-control unicase-form-control text-input" id="exampleInputPassword1">
+		</div>
+		<div class="radio outer-xs">
+		  	<label>   
+		    	<input type="checkbox" name="_remember_me" id="customControlAutosizing" value="on">{{ 'security.login.remember_me'|trans }}
+		  	</label>
+		  	<a href="#" class="forgot-password pull-right">Forgot your Password?</a>
+		</div>
+   
+	  	<button type="submit" id="_submit" name="_submit" class="btn-upper btn btn-primary checkout-page-button">{{ 'security.login.submit'|trans }}</button>
+	</form>					
 </div>
 
-   
+
+
+ </div><!-- /.row -->
+		</div>
+        
+        </div>
 
 
 
 
 
-<!-- latest jquery-->
-<script src="{{ asset('assets/admin-js/jquery-3.3.1.min.js') }}"></script>
-
-<!-- Bootstrap js-->
-<script src="{{ asset('assets/admin-js/bootstrap.js') }}"></script>
- 
-<script src="{{ asset('assets/admin-js/popper.min.js') }}"></script>
-<!-- feather icon js-->
-<script src="{{ asset('assets/admin-js/icons/feather-icon/feather.min.js') }}"></script>
-<script src="{{ asset('assets/admin-js/icons/feather-icon/feather-icon.js') }}"></script>
- 
-
-<!-- Sidebar jquery-->
-<script src="{{ asset('assets/admin-js/sidebar-menu.js') }}"></script>
-<script src="{{ asset('assets/admin-js/slick.js') }}"></script>
 
 
-<!-- Jsgrid js-->
-<script src="{{ asset('assets/admin-js/jsgrid/jsgrid.min.js') }}"></script>
-<script src="{{ asset('assets/admin-js/jsgrid/griddata-invoice.js') }}"></script>
-<script src="{{ asset('assets/admin-js/jsgrid/jsgrid-invoice.js') }}"></script>
- 
 
-<!-- lazyload js-->
-<script src="{{ asset('assets/admin-js/lazysizes.min.js') }}"></script>
- 
 
-<!--right sidebar js-->
-<script src="{{ asset('assets/admin-js/chat-menu.js') }}"></script>
-
-<!--script admin-->
-<script src="{{ asset('assets/admin-js/admin-script.js') }}"></script>
-<script>
-    $('.single-item').slick({
-            arrows: false,
-            dots: true
-        }
-    );
-</script>
-{% endblock body %}
+{% endblock page_content %}

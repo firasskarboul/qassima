@@ -437,10 +437,10 @@
     <parameter key="fos_user.resetting.email.template">@FOSUser/Resetting/email.txt.twig</parameter>
     <parameter key="fos_user.registration.confirmation.template">@FOSUser/Registration/email.txt.twig</parameter>
     <parameter key="fos_user.registration.confirmation.from_email" type="collection">
-      <parameter key="you@example.com">You</parameter>
+      <parameter key="registration@example.com">Demo Registration</parameter>
     </parameter>
     <parameter key="fos_user.resetting.email.from_email" type="collection">
-      <parameter key="you@example.com">You</parameter>
+      <parameter key="chkawrbai@gmail.com">Admin</parameter>
     </parameter>
     <parameter key="fos_user.storage">orm</parameter>
     <parameter key="fos_user.firewall_name">main</parameter>
@@ -452,7 +452,7 @@
       <parameter>Profile</parameter>
       <parameter>Default</parameter>
     </parameter>
-    <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
+    <parameter key="fos_user.registration.confirmation.enabled">true</parameter>
     <parameter key="fos_user.registration.form.type">Eshop\UserBundle\Form\Type\RegistrationType</parameter>
     <parameter key="fos_user.registration.form.name">fos_user_registration_form</parameter>
     <parameter key="fos_user.registration.form.validation_groups" type="collection">
@@ -3098,6 +3098,14 @@
         <argument>0</argument>
       </call>
       <call method="addListener">
+        <argument>fos_user.registration.success</argument>
+        <argument type="collection">
+          <argument type="service" id="fos_user.listener.email_confirmation"/>
+          <argument>onRegistrationSuccess</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
         <argument>fos_user.resetting.reset.initialize</argument>
         <argument type="collection">
           <argument type="service" id="fos_user.listener.resetting"/>
@@ -5440,6 +5448,13 @@
         <argument type="service" id="service_container"/>
       </call>
     </service>
+    <service id="fos_user.listener.email_confirmation" class="FOS\UserBundle\EventListener\EmailConfirmationListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument type="service" id="fos_user.mailer.twig_swift"/>
+      <argument type="service" id="fos_user.util.token_generator.default"/>
+      <argument type="service" id="router.default"/>
+      <argument type="service" id="session"/>
+    </service>
     <service id="fos_user.change_password.form.factory" class="FOS\UserBundle\Form\Factory\FormFactory">
       <argument type="service" id="form.factory"/>
       <argument>fos_user_change_password_form</argument>
@@ -5478,7 +5493,7 @@
       <argument type="service" id="fos_user.resetting.form.factory"/>
       <argument type="service" id="fos_user.user_manager.default"/>
       <argument type="service" id="fos_user.util.token_generator.default"/>
-      <argument type="service" id="fos_user.mailer.default"/>
+      <argument type="service" id="fos_user.mailer.twig_swift"/>
       <argument>7200</argument>
       <call method="setContainer">
         <argument type="service" id="service_container"/>
@@ -5989,7 +6004,7 @@
     </service>
     <service id="hwi_oauth.registration.form.handler.fosub_bridge.def" class="HWI\Bundle\OAuthBundle\Form\FOSUBRegistrationFormHandler" abstract="true">
       <argument type="service" id="fos_user.user_manager.default"/>
-      <argument type="service" id="fos_user.mailer.default"/>
+      <argument type="service" id="fos_user.mailer.twig_swift"/>
       <argument type="service" id="fos_user.util.token_generator.default" on-invalid="null"/>
       <call method="setFormHandler">
         <argument type="service" id="fos_user.registration.form.handler" on-invalid="null"/>
@@ -6093,7 +6108,7 @@
     </service>
     <service id="hwi_oauth.registration.form.handler.fosub_bridge" class="HWI\Bundle\OAuthBundle\Form\FOSUBRegistrationFormHandler">
       <argument type="service" id="fos_user.user_manager.default"/>
-      <argument type="service" id="fos_user.mailer.default"/>
+      <argument type="service" id="fos_user.mailer.twig_swift"/>
       <argument type="service" id="fos_user.util.token_generator.default" on-invalid="null"/>
       <argument>30</argument>
       <call method="setFormHandler">
@@ -6542,7 +6557,7 @@
     <service id="FOS\UserBundle\Controller\RegistrationController" alias="fos_user.registration.controller" public="true"/>
     <service id="FOS\UserBundle\Controller\ChangePasswordController" alias="fos_user.change_password.controller" public="true"/>
     <service id="FOS\UserBundle\Controller\ResettingController" alias="fos_user.resetting.controller" public="true"/>
-    <service id="fos_user.mailer" alias="fos_user.mailer.default"/>
+    <service id="fos_user.mailer" alias="fos_user.mailer.twig_swift"/>
     <service id="fos_user.session" alias="session" public="false"/>
     <service id="liip_imagine" alias="liip_imagine.gd"/>
     <service id="hwi_oauth.account.connector" alias="my_user_provider"/>

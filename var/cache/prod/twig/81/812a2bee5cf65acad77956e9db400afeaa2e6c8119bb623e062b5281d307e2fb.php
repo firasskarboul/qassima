@@ -25,15 +25,15 @@ class __TwigTemplate_33b33ed584f618fe9c723a6e519ab09243a9de5c18ada59da4c1ba8db94
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
-            'stylesheets' => [$this, 'block_stylesheets'],
-            'body' => [$this, 'block_body'],
+            'title' => [$this, 'block_title'],
+            'page_content' => [$this, 'block_page_content'],
         ];
     }
 
     protected function doGetParent(array $context)
     {
         // line 1
-        return "::base.html.twig";
+        return "@Shop/layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -42,7 +42,7 @@ class __TwigTemplate_33b33ed584f618fe9c723a6e519ab09243a9de5c18ada59da4c1ba8db94
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@FOSUser/Security/login.html.twig"));
 
-        $this->parent = $this->loadTemplate("::base.html.twig", "@FOSUser/Security/login.html.twig", 1);
+        $this->parent = $this->loadTemplate("@Shop/layout.html.twig", "@FOSUser/Security/login.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -50,293 +50,112 @@ class __TwigTemplate_33b33ed584f618fe9c723a6e519ab09243a9de5c18ada59da4c1ba8db94
     }
 
     // line 5
-    public function block_stylesheets($context, array $blocks = [])
+    public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "    ";
-        $this->displayParentBlock("stylesheets", $context, $blocks);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("Create a new account", [], "FOSUserBundle"), "html", null, true);
         echo "
-    <link href=\"";
-        // line 7
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/signin.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-    
-    <!-- Google font-->
-     <link href=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/css.css?family=Work+Sans:100,200,300,400,500,600,700,800,900"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-    <link href=\"";
-        // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/css-1.css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-    <link href=\"";
-        // line 12
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/font-awesome.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-
-    <!-- Font Awesome-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 15
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/themify.css"), "html", null, true);
-        echo "\">
-
-    <!-- Flag icon-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 18
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/slick.css"), "html", null, true);
-        echo "\">
-
-    <!-- slick icon-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 21
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/slick-theme.css"), "html", null, true);
-        echo "\">
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 22
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/jsgrid.css"), "html", null, true);
-        echo "\">
-
-    <!-- jsgrid css-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 25
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/bootstrap.css"), "html", null, true);
-        echo "\">
-
-    <!-- Bootstrap css-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 28
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-css/admin.css"), "html", null, true);
-        echo "\">
-
-     
-    
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 34
-    public function block_body($context, array $blocks = [])
+    // line 10
+    public function block_page_content($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_content"));
 
-        // line 35
+        // line 11
         echo "    ";
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 35, $this->source); })())) {
-            // line 36
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 11, $this->source); })())) {
+            // line 12
             echo "        <div>";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 36, $this->source); })()), "messageKey", [], "any", false, false, false, 36), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 36, $this->source); })()), "messageData", [], "any", false, false, false, 36), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 12, $this->source); })()), "messageKey", [], "any", false, false, false, 12), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 12, $this->source); })()), "messageData", [], "any", false, false, false, 12), "security"), "html", null, true);
             echo "</div>
     ";
         }
-        // line 38
+        // line 14
         echo "
 
+ <div class=\"col-md-12\"> 
 
-<div class=\"page-wrapper\">
-    <div class=\"authentication-box\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-5 p-0 card-left\">
-                    <div class=\"card bg-primary\">
-                        <div class=\"svg-icon\">
-      <img style=\"    width: 100px;\" src=\"";
-        // line 48
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo.png"), "html", null, true);
-        echo "\" alt=\" \"   >
-                        </div>
+      <div class=\"sign-in-page\">
+\t\t\t<div class=\"row\">
+ 
+";
+        // line 58
+        echo "
 
-                        <div class=\"single-item\">
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-md-7 p-0 card-right\">
-                    <div class=\"card tab2-card\">
-                        <div class=\"card-body\">
-                            <ul class=\"nav nav-tabs nav-material\" id=\"top-tab\" role=\"tablist\">
-                                <li class=\"nav-item\">
-                                    <a class=\"nav-link active\" id=\"top-profile-tab\" data-toggle=\"tab\" href=\"#top-profile\" role=\"tab\" aria-controls=\"top-profile\" aria-selected=\"true\"><span class=\"icon-user mr-2\"></span>Login</a>
-                                </li>
-                                 
-                            </ul>
-                            <div class=\"tab-content\" id=\"top-tabContent\">
-                                <div class=\"tab-pane fade show active\" id=\"top-profile\" role=\"tabpanel\" aria-labelledby=\"top-profile-tab\">
-                                   <form class=\"form-horizontal auth-form\" action=\"";
-        // line 84
+  <div class=\"col-md-6 col-sm-6 sign-in\">
+\t<h4 class=\"\">Sign in</h4>
+\t<p class=\"\">Hello, Welcome to your account.</p>
+\t<div class=\"social-sign-in outer-top-xs\">
+\t\t<a href=\"#\" class=\"facebook-sign-in\"><i class=\"fa fa-facebook\"></i> Sign In with Facebook</a>
+\t\t<a href=\"#\" class=\"twitter-sign-in\"><i class=\"fa fa-twitter\"></i> Sign In with Twitter</a>
+\t</div>
+    <form class=\"register-form outer-top-xs\" action=\"";
+        // line 67
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("fos_user_security_check");
         echo "\" method=\"post\">
                                      <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 85
-        echo twig_escape_filter($this->env, (isset($context["csrf_token"]) || array_key_exists("csrf_token", $context) ? $context["csrf_token"] : (function () { throw new RuntimeError('Variable "csrf_token" does not exist.', 85, $this->source); })()), "html", null, true);
+        // line 68
+        echo twig_escape_filter($this->env, (isset($context["csrf_token"]) || array_key_exists("csrf_token", $context) ? $context["csrf_token"] : (function () { throw new RuntimeError('Variable "csrf_token" does not exist.', 68, $this->source); })()), "html", null, true);
         echo "\"/>
-                                        <div class=\"form-group\">
-                                         
-            <input type=\"text\" class=\"form-control\" id=\"exampleInputEmail1\" name=\"_username\" value=\"";
-        // line 88
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 88, $this->source); })()), "html", null, true);
-        echo "\"
-                   required=\"required\" placeholder=\"Username\" />
-                                           
-                                        </div>
-                                        <div class=\"form-group\">
-                                            <input required=\"required\" name=\"_password\" id=\"password\" type=\"password\" class=\"form-control\" placeholder=\"";
-        // line 93
+ 
+\t\t<div class=\"form-group\">
+\t\t    <label class=\"info-title\" for=\"exampleInputEmail1\">Username <span>*</span></label>
+\t\t    <input type=\"text\" class=\"form-control unicase-form-control text-input\"  id=\"exampleInputEmail1\" name=\"_username\" value=\"";
+        // line 72
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 72, $this->source); })()), "html", null, true);
+        echo "\"  >
+\t\t</div>
+\t  \t<div class=\"form-group\">
+\t\t    <label class=\"info-title\" for=\"exampleInputPassword1\">";
+        // line 75
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.password", [], "FOSUserBundle"), "html", null, true);
-        echo "\">
-                                        </div>
-            
-                                        <div class=\"form-terms\">
-                                            <div class=\"custom-control custom-checkbox mr-sm-2\">
-                                                <input type=\"checkbox\" class=\"custom-control-input\" name=\"_remember_me\" value=\"on\" id=\"customControlAutosizing\">
-                                                <label class=\"custom-control-label\" for=\"customControlAutosizing\">";
-        // line 99
+        echo "<span>*</span></label>
+\t\t    <input type=\"password\"  name=\"_password\" class=\"form-control unicase-form-control text-input\" id=\"exampleInputPassword1\">
+\t\t</div>
+\t\t<div class=\"radio outer-xs\">
+\t\t  \t<label>   
+\t\t    \t<input type=\"checkbox\" name=\"_remember_me\" id=\"customControlAutosizing\" value=\"on\">";
+        // line 80
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.remember_me", [], "FOSUserBundle"), "html", null, true);
-        echo "</label>
-                                                <a href=\"#\" class=\"btn btn-default forgot-pass\">lost your password</a>
-                                            </div>
-                                   
-                                        </div>
-                                        <div class=\"form-button\">
-                                        <input class=\"btn btn-primary\" type=\"submit\" id=\"_submit\" name=\"_submit\"
-               value=\"";
-        // line 106
+        echo "
+\t\t  \t</label>
+\t\t  \t<a href=\"#\" class=\"forgot-password pull-right\">Forgot your Password?</a>
+\t\t</div>
+   
+\t  \t<button type=\"submit\" id=\"_submit\" name=\"_submit\" class=\"btn-upper btn btn-primary checkout-page-button\">";
+        // line 85
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login.submit", [], "FOSUserBundle"), "html", null, true);
-        echo "\"/>
-                                             
-                                        </div>
-                                        <div class=\"form-footer\">
-                                            <span>Or Login up with social platforms</span>
-                                            <ul class=\"social\">
-                                                <li><a class=\"icon-facebook\" href=\"\"></a></li>
-                                                <li><a class=\"icon-twitter\" href=\"\"></a></li>
-                                                <li><a class=\"icon-instagram\" href=\"\"></a></li>
-                                                <li><a class=\"icon-pinterest\" href=\"\"></a></li>
-                                            </ul>
-                                        </div>
-                                    </form>
-                                </div>
-                                
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href=\"index.html\" class=\"btn btn-primary back-btn\"><i data-feather=\"arrow-left\"></i>back</a>
-        </div>
-    </div>
+        echo "</button>
+\t</form>\t\t\t\t\t
 </div>
 
-   
+
+
+ </div><!-- /.row -->
+\t\t</div>
+        
+        </div>
 
 
 
 
 
-<!-- latest jquery-->
-<script src=\"";
-        // line 139
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/jquery-3.3.1.min.js"), "html", null, true);
-        echo "\"></script>
-
-<!-- Bootstrap js-->
-<script src=\"";
-        // line 142
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/bootstrap.js"), "html", null, true);
-        echo "\"></script>
- 
-<script src=\"";
-        // line 144
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/popper.min.js"), "html", null, true);
-        echo "\"></script>
-<!-- feather icon js-->
-<script src=\"";
-        // line 146
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/icons/feather-icon/feather.min.js"), "html", null, true);
-        echo "\"></script>
-<script src=\"";
-        // line 147
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/icons/feather-icon/feather-icon.js"), "html", null, true);
-        echo "\"></script>
- 
-
-<!-- Sidebar jquery-->
-<script src=\"";
-        // line 151
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/sidebar-menu.js"), "html", null, true);
-        echo "\"></script>
-<script src=\"";
-        // line 152
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/slick.js"), "html", null, true);
-        echo "\"></script>
 
 
-<!-- Jsgrid js-->
-<script src=\"";
-        // line 156
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/jsgrid/jsgrid.min.js"), "html", null, true);
-        echo "\"></script>
-<script src=\"";
-        // line 157
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/jsgrid/griddata-invoice.js"), "html", null, true);
-        echo "\"></script>
-<script src=\"";
-        // line 158
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/jsgrid/jsgrid-invoice.js"), "html", null, true);
-        echo "\"></script>
- 
 
-<!-- lazyload js-->
-<script src=\"";
-        // line 162
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/lazysizes.min.js"), "html", null, true);
-        echo "\"></script>
- 
 
-<!--right sidebar js-->
-<script src=\"";
-        // line 166
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/chat-menu.js"), "html", null, true);
-        echo "\"></script>
-
-<!--script admin-->
-<script src=\"";
-        // line 169
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin-js/admin-script.js"), "html", null, true);
-        echo "\"></script>
-<script>
-    \$('.single-item').slick({
-            arrows: false,
-            dots: true
-        }
-    );
-</script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -355,95 +174,34 @@ class __TwigTemplate_33b33ed584f618fe9c723a6e519ab09243a9de5c18ada59da4c1ba8db94
 
     public function getDebugInfo()
     {
-        return array (  331 => 169,  325 => 166,  318 => 162,  311 => 158,  307 => 157,  303 => 156,  296 => 152,  292 => 151,  285 => 147,  281 => 146,  276 => 144,  271 => 142,  265 => 139,  229 => 106,  219 => 99,  210 => 93,  202 => 88,  196 => 85,  192 => 84,  153 => 48,  141 => 38,  135 => 36,  132 => 35,  125 => 34,  113 => 28,  107 => 25,  101 => 22,  97 => 21,  91 => 18,  85 => 15,  79 => 12,  75 => 11,  71 => 10,  65 => 7,  60 => 6,  53 => 5,  36 => 1,);
+        return array (  139 => 85,  131 => 80,  123 => 75,  117 => 72,  110 => 68,  106 => 67,  95 => 58,  86 => 14,  80 => 12,  77 => 11,  70 => 10,  60 => 6,  53 => 5,  36 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends \"::base.html.twig\" %}
-
+        return new Source("{% extends \"@Shop/layout.html.twig\" %}
 {% trans_default_domain 'FOSUserBundle' %}
+ 
 
-{% block stylesheets %}
-    {{ parent() }}
-    <link href=\"{{ asset('assets/css/signin.css') }}\" rel=\"stylesheet\">
-    
-    <!-- Google font-->
-     <link href=\"{{ asset('assets/admin-css/css.css?family=Work+Sans:100,200,300,400,500,600,700,800,900') }}\" rel=\"stylesheet\">
-    <link href=\"{{ asset('assets/admin-css/css-1.css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i') }}\" rel=\"stylesheet\">
-    <link href=\"{{ asset('assets/admin-css/font-awesome.css') }}\" rel=\"stylesheet\">
+{% block title %}
+    {{ 'Create a new account'|trans }}
+{% endblock title %}
 
-    <!-- Font Awesome-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/admin-css/themify.css') }}\">
 
-    <!-- Flag icon-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/admin-css/slick.css') }}\">
-
-    <!-- slick icon-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/admin-css/slick-theme.css') }}\">
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/admin-css/jsgrid.css') }}\">
-
-    <!-- jsgrid css-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/admin-css/bootstrap.css') }}\">
-
-    <!-- Bootstrap css-->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('assets/admin-css/admin.css') }}\">
-
-     
-    
-{% endblock %}
-
-{% block body %}
+{% block page_content %}
     {% if error %}
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
 
+ <div class=\"col-md-12\"> 
 
-<div class=\"page-wrapper\">
-    <div class=\"authentication-box\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-5 p-0 card-left\">
-                    <div class=\"card bg-primary\">
-                        <div class=\"svg-icon\">
-      <img style=\"    width: 100px;\" src=\"{{ asset('assets/images/logo.png') }}\" alt=\" \"   >
-                        </div>
-
-                        <div class=\"single-item\">
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3>Welcome to Bigdeal</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-md-7 p-0 card-right\">
-                    <div class=\"card tab2-card\">
-                        <div class=\"card-body\">
-                            <ul class=\"nav nav-tabs nav-material\" id=\"top-tab\" role=\"tablist\">
-                                <li class=\"nav-item\">
-                                    <a class=\"nav-link active\" id=\"top-profile-tab\" data-toggle=\"tab\" href=\"#top-profile\" role=\"tab\" aria-controls=\"top-profile\" aria-selected=\"true\"><span class=\"icon-user mr-2\"></span>Login</a>
-                                </li>
-                                 
-                            </ul>
-                            <div class=\"tab-content\" id=\"top-tabContent\">
-                                <div class=\"tab-pane fade show active\" id=\"top-profile\" role=\"tabpanel\" aria-labelledby=\"top-profile-tab\">
-                                   <form class=\"form-horizontal auth-form\" action=\"{{ path(\"fos_user_security_check\") }}\" method=\"post\">
+      <div class=\"sign-in-page\">
+\t\t\t<div class=\"row\">
+ 
+{# 
+ 
+<form class=\"form-horizontal auth-form\" action=\"{{ path(\"fos_user_security_check\") }}\" method=\"post\">
                                      <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token }}\"/>
                                         <div class=\"form-group\">
                                          
@@ -477,66 +235,54 @@ class __TwigTemplate_33b33ed584f618fe9c723a6e519ab09243a9de5c18ada59da4c1ba8db94
                                                 <li><a class=\"icon-pinterest\" href=\"\"></a></li>
                                             </ul>
                                         </div>
-                                    </form>
-                                </div>
-                                
+                                    </form> #}
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href=\"index.html\" class=\"btn btn-primary back-btn\"><i data-feather=\"arrow-left\"></i>back</a>
-        </div>
-    </div>
+
+  <div class=\"col-md-6 col-sm-6 sign-in\">
+\t<h4 class=\"\">Sign in</h4>
+\t<p class=\"\">Hello, Welcome to your account.</p>
+\t<div class=\"social-sign-in outer-top-xs\">
+\t\t<a href=\"#\" class=\"facebook-sign-in\"><i class=\"fa fa-facebook\"></i> Sign In with Facebook</a>
+\t\t<a href=\"#\" class=\"twitter-sign-in\"><i class=\"fa fa-twitter\"></i> Sign In with Twitter</a>
+\t</div>
+    <form class=\"register-form outer-top-xs\" action=\"{{ path(\"fos_user_security_check\") }}\" method=\"post\">
+                                     <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token }}\"/>
+ 
+\t\t<div class=\"form-group\">
+\t\t    <label class=\"info-title\" for=\"exampleInputEmail1\">Username <span>*</span></label>
+\t\t    <input type=\"text\" class=\"form-control unicase-form-control text-input\"  id=\"exampleInputEmail1\" name=\"_username\" value=\"{{ last_username }}\"  >
+\t\t</div>
+\t  \t<div class=\"form-group\">
+\t\t    <label class=\"info-title\" for=\"exampleInputPassword1\">{{ 'security.login.password'|trans }}<span>*</span></label>
+\t\t    <input type=\"password\"  name=\"_password\" class=\"form-control unicase-form-control text-input\" id=\"exampleInputPassword1\">
+\t\t</div>
+\t\t<div class=\"radio outer-xs\">
+\t\t  \t<label>   
+\t\t    \t<input type=\"checkbox\" name=\"_remember_me\" id=\"customControlAutosizing\" value=\"on\">{{ 'security.login.remember_me'|trans }}
+\t\t  \t</label>
+\t\t  \t<a href=\"#\" class=\"forgot-password pull-right\">Forgot your Password?</a>
+\t\t</div>
+   
+\t  \t<button type=\"submit\" id=\"_submit\" name=\"_submit\" class=\"btn-upper btn btn-primary checkout-page-button\">{{ 'security.login.submit'|trans }}</button>
+\t</form>\t\t\t\t\t
 </div>
 
-   
+
+
+ </div><!-- /.row -->
+\t\t</div>
+        
+        </div>
 
 
 
 
 
-<!-- latest jquery-->
-<script src=\"{{ asset('assets/admin-js/jquery-3.3.1.min.js') }}\"></script>
-
-<!-- Bootstrap js-->
-<script src=\"{{ asset('assets/admin-js/bootstrap.js') }}\"></script>
- 
-<script src=\"{{ asset('assets/admin-js/popper.min.js') }}\"></script>
-<!-- feather icon js-->
-<script src=\"{{ asset('assets/admin-js/icons/feather-icon/feather.min.js') }}\"></script>
-<script src=\"{{ asset('assets/admin-js/icons/feather-icon/feather-icon.js') }}\"></script>
- 
-
-<!-- Sidebar jquery-->
-<script src=\"{{ asset('assets/admin-js/sidebar-menu.js') }}\"></script>
-<script src=\"{{ asset('assets/admin-js/slick.js') }}\"></script>
 
 
-<!-- Jsgrid js-->
-<script src=\"{{ asset('assets/admin-js/jsgrid/jsgrid.min.js') }}\"></script>
-<script src=\"{{ asset('assets/admin-js/jsgrid/griddata-invoice.js') }}\"></script>
-<script src=\"{{ asset('assets/admin-js/jsgrid/jsgrid-invoice.js') }}\"></script>
- 
 
-<!-- lazyload js-->
-<script src=\"{{ asset('assets/admin-js/lazysizes.min.js') }}\"></script>
- 
 
-<!--right sidebar js-->
-<script src=\"{{ asset('assets/admin-js/chat-menu.js') }}\"></script>
-
-<!--script admin-->
-<script src=\"{{ asset('assets/admin-js/admin-script.js') }}\"></script>
-<script>
-    \$('.single-item').slick({
-            arrows: false,
-            dots: true
-        }
-    );
-</script>
-{% endblock body %}
+{% endblock page_content %}
 ", "@FOSUser/Security/login.html.twig", "D:\\laragon\\www\\qassima\\src\\Eshop\\UserBundle\\Resources\\views\\Security\\login.html.twig");
     }
 }

@@ -81,9 +81,17 @@ fos_user:
     registration:
         form:
             type: Eshop\UserBundle\Form\Type\RegistrationType
+        confirmation:
+            enabled: true
+            from_email:
+                address:        registration@example.com
+                sender_name:    Demo Registration
+            template:   '@FOSUser/Registration/email.txt.twig'
     from_email:
-        address: you@example.com
-        sender_name: You
+        address: chkawrbai@gmail.com
+        sender_name: Admin
+    service:
+        mailer: fos_user.mailer.twig_swift
 
 knp_paginator:
     page_range: 5                      # default page range used in pagination control
